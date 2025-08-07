@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing - Hire Me!</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://use.typekit.net/yjp3aho.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body { font-family: "sofia-pro", sans-serif; }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <!-- Navigation -->
+  <div id="navbar-container" data-source="components/navbar.html"></div>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-blue-600 to-blue-800 text-white py-16" data-id="pricing-hero">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6" data-id="hero-title">Simple, Transparent Pricing</h1>
+      <p class="text-xl text-blue-100 max-w-2xl mx-auto" data-id="hero-subtitle">
+        Choose the plan that works best for your hiring needs. No hidden fees, no surprises.
+      </p>
+    </div>
+  </section>
+
+  <!-- Pricing Cards -->
+  <section class="py-16" data-id="pricing-section">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Job Posting Plans -->
+      <div class="mb-16" data-id="job-posting-plans">
+        <h2 class="text-3xl font-bold text-gray-900 text-center mb-12" data-id="job-posting-title">Job Posting Plans</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8" data-id="job-posting-grid">
+          
+          <!-- Basic Plan -->
+          <div class="bg-white rounded-lg shadow-lg p-8 border border-gray-200" data-id="basic-plan">
+            <div class="text-center mb-8" data-id="basic-plan-header">
+              <h3 class="text-2xl font-bold text-gray-900 mb-4" data-id="basic-plan-name">Basic</h3>
+              <div class="mb-4" data-id="basic-plan-price">
+                <span class="text-4xl font-bold text-gray-900" data-id="basic-price">$199</span>
+                <span class="text-gray-600" data-id="basic-price-period">per job</span>
+              </div>
+              <p class="text-gray-600" data-id="basic-plan-description">Perfect for single job postings</p>
+            </div>
+            
+            <ul class="space-y-4 mb-8" data-id="basic-plan-features">
+              <li class="flex items-center" data-id="basic-feature-1">
+                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                <span class="text-gray-700">30-day job posting</span>
+              </li>
+              <li class="flex items-center" data-id="basic-feature-2">
+                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                <span class="text-gray-700">Unlimited applications</span>
+              </li>
+              <li class="flex items-center" data-id="basic-feature-3">
+                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                <span class="text-gray-700">Basic applicant tracking</span>
+              </li>
+              <li class="flex items-center" data-id="basic-feature-4">
+                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                <span class="text-gray-700">Email notifications</span>
+              </li>
+              <li class="flex items-center" data-id="basic-feature-5">
+                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                <span class="text-gray-700">Standard support</span>
+              </li>
+            </ul>
+            
+            <button class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors" data-id="basic-plan-button">
+              Get Started
+            </button>
+          </div>
+
+          <!-- Premium Plan -->
+          <div class="bg-white rounded-lg shadow-lg p-8 border-2 border-blue-500 relative" data-id="premium-plan">
+            <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2" data-id="premium-badge">
+              <span class="bg-blue-500 text-white px-4 py-1 rounded-full text-sm font-medium">Most Popular</span>
+            </div>
+            
+            <div class="text-center mb-8" data-id="premium-plan-header">
+              <h3 class="text-2xl font-bold text-gray-900 mb-4" data-id="premium-plan-name">Premium</h3>
+              <div class="mb-4" data-id="premium-plan-price">
+                <span class="text-4xl font-bold text-gray-900" data-id="premium-price">$399</span>
+                <span class="text-gray-600" data-id="premium-price-period">per job</span>
+              </div>
+              <p class="text-gray-600" data-id="premium-plan-description">Enhanced visibility and features</p>
+            </div>
+            
+            <ul class="space-y-4 mb-8" data-id="premium-plan-features">
+              <li class="flex items-center" data-id="premium-feature-1">
+                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                <span class="text-gray-700">60-day job posting</span>
+              </li>
+              <li class="flex items-center" data-id="premium-feature-2">
+                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                <span class="text-gray-700">Featured in job listings</span>
+              </li>
+              <li class="flex items-center" data-id="premium-feature-3">
+                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                <span class="text-gray-700">Social media promotion</span>
+              </li>
+              <li class="flex items-center" data-id="premium-feature-4">
+                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                <span class="text-gray-700">Advanced analytics</span>
+              </li>
+              <li class="flex items-center" data-id="premium-feature-5">
+                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                <span class="text-gray-700">Candidate screening tools</span>
+              </li>
+              <li class="flex items-center" data-id="premium-feature-6">
+                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                <span class="text-gray-700">Priority support</span>
+              </li>
+            </ul>
+            
+            <button class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors" data-id="premium-plan-button">
+              Get Started
+            </button>
+          </div>
+
+          <!-- Enterprise Plan -->
+          <div class="bg-white rounded-lg shadow-lg p-8 border border-gray-200" data-id="enterprise-plan">
+            <div class="text-center mb-8" data-id="enterprise-plan-header">
+              <h3 class="text-2xl font-bold text-gray-900 mb-4" data-id="enterprise-plan-name">Enterprise</h3>
+              <div class="mb-4" data-id="enterprise-plan-price">
+                <span class="text-4xl font-bold text-gray-900" data-id="enterprise-price">Custom</span>
+              </div>
+              <p class="text-gray-600" data-id="enterprise-plan-description">Tailored solutions for large teams</p>
+            </div>
+            
+            <ul class="space-y-4 mb-8" data-id="enterprise-plan-features">
+              <li class="flex items-center" data-id="enterprise-feature-1">
+                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                <span class="text-gray-700">Unlimited job postings</span>
+              </li>
+              <li class="flex items-center" data-id="enterprise-feature-2">
+                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                <span class="text-gray-700">Custom branding</span>
+              </li>
+              <li class="flex items-center" data-id="enterprise-feature-3">
+                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                <span class="text-gray-700">API access</span>
+              </li>
+              <li class="flex items-center" data-id="enterprise-feature-4">
+                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                <span class="text-gray-700">Dedicated account manager</span>
+              </li>
+              <li class="flex items-center" data-id="enterprise-feature-5">
+                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                <span class="text-gray-700">Advanced reporting</span>
+              </li>
+              <li class="flex items-center" data-id="enterprise-feature-6">
+                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                <span class="text-gray-700">24/7 premium support</span>
+              </li>
+            </ul>
+            
+            <button class="w-full bg-gray-900 text-white py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors" data-id="enterprise-plan-button">
+              Contact Sales
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Add-on Services -->
+      <div class="mb-16" data-id="addon-services">
+        <h2 class="text-3xl font-bold text-gray-900 text-center mb-12" data-id="addon-title">Add-on Services</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" data-id="addon-grid">
+          
+          <div class="bg-white rounded-lg shadow p-6 text-center" data-id="urgent-addon">
+            <div class="bg-red-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4" data-id="urgent-icon">
+              <i data-lucide="zap" class="w-8 h-8 text-red-600"></i>
+            </div>
+            <h3 class="text-lg font-semibold mb-2" data-id="urgent-title">Urgent Posting</h3>
+            <p class="text-gray-600 mb-4" data-id="urgent-description">Priority placement for immediate hiring needs</p>
+            <div class="text-2xl font-bold text-gray-900" data-id="urgent-price">+$50</div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow p-6 text-center" data-id="featured-addon">
+            <div class="bg-yellow-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4" data-id="featured-icon">
+              <i data-lucide="star" class="w-8 h-8 text-yellow-600"></i>
+            </div>
+            <h3 class="text-lg font-semibold mb-2" data-id="featured-title">Featured Listing</h3>
+            <p class="text-gray-600 mb-4" data-id="featured-description">Highlight your job at the top of search results</p>
+            <div class="text-2xl font-bold text-gray-900" data-id="featured-price">+$100</div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow p-6 text-center" data-id="social-addon">
+            <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4" data-id="social-icon">
+              <i data-lucide="share-2" class="w-8 h-8 text-blue-600"></i>
+            </div>
+            <h3 class="text-lg font-semibold mb-2" data-id="social-title">Social Promotion</h3>
+            <p class="text-gray-600 mb-4" data-id="social-description">Share your job across our social media channels</p>
+            <div class="text-2xl font-bold text-gray-900" data-id="social-price">+$75</div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow p-6 text-center" data-id="screening-addon">
+            <div class="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4" data-id="screening-icon">
+              <i data-lucide="user-check" class="w-8 h-8 text-green-600"></i>
+            </div>
+            <h3 class="text-lg font-semibold mb-2" data-id="screening-title">Pre-screening</h3>
+            <p class="text-gray-600 mb-4" data-id="screening-description">Automated candidate screening questionnaire</p>
+            <div class="text-2xl font-bold text-gray-900" data-id="screening-price">+$125</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Subscription Plans -->
+      <div class="mb-16" data-id="subscription-plans">
+        <h2 class="text-3xl font-bold text-gray-900 text-center mb-12" data-id="subscription-title">Subscription Plans</h2>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8" data-id="subscription-grid">
+          
+          <!-- Monthly Plan -->
+          <div class="bg-white rounded-lg shadow-lg p-8 border border-gray-200" data-id="monthly-plan">
+            <div class="text-center mb-8" data-id="monthly-header">
+              <h3 class="text-2xl font-bold text-gray-900 mb-4" data-id="monthly-name">Monthly Plan</h3>
+              <div class="mb-4" data-id="monthly-price-display">
+                <span class="text-4xl font-bold text-gray-900" data-id="monthly-price">$999</span>
+                <span class="text-gray-600" data-id="monthly-period">/month</span>
+              </div>
+              <p class="text-gray-600" data-id="monthly-description">Perfect for regular hiring needs</p>
+            </div>
+            
+            <ul class="space-y-4 mb-8" data-id="monthly-features">
+              <li class="flex items-center" data-id="monthly-feature-1">
+                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                <span class="text-gray-700">10 job postings per month</span>
+              </li>
+              <li class="flex items-center" data-id="monthly-feature-2">
+                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                <span class="text-gray-700">Featured listings included</span>
+              </li>
+              <li class="flex items-center" data-id="monthly-feature-3">
+                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                <span class="text-gray-700">Candidate database access</span>
+              </li>
+              <li class="flex items-center" data-id="monthly-feature-4">
+                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                <span class="text-gray-700">Advanced analytics</span>
+              </li>
+              <li class="flex items-center" data-id="monthly-feature-5">
+                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                <span class="text-gray-700">Priority support</span>
+              </li>
+            </ul>
+            
+            <button class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors" data-id="monthly-button">
+              Start Monthly Plan
+            </button>
+          </div>
+
+          <!-- Annual Plan -->
+          <div class="bg-white rounded-lg shadow-lg p-8 border-2 border-green-500 relative" data-id="annual-plan">
+            <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2" data-id="annual-badge">
+              <span class="bg-green-500 text-white px-4 py-1 rounded-full text-sm font-medium">Save 20%</span>
+            </div>
+            
+            <div class="text-center mb-8" data-id="annual-header">
+              <h3 class="text-2xl font-bold text-gray-900 mb-4" data-id="annual-name">Annual Plan</h3>
+              <div class="mb-4" data-id="annual-price-display">
+                <span class="text-4xl font-bold text-gray-900" data-id="annual-price">$799</span>
+                <span class="text-gray-600" data-id="annual-period">/month</span>
+              </div>
+              <div class="text-sm text-green-600 mb-2" data-id="annual-savings">
+                <strike class="text-gray-400">$999/month</strike> Save $200/month
+              </div>
+              <p class="text-gray-600" data-id="annual-description">Best value for growing companies</p>
+            </div>
+            
+            <ul class="space-y-4 mb-8" data-id="annual-features">
+              <li class="flex items-center" data-id="annual-feature-1">
+                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                <span class="text-gray-700">15 job postings per month</span>
+              </li>
+              <li class="flex items-center" data-id="annual-feature-2">
+                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                <span class="text-gray-700">All featured listings included</span>
+              </li>
+              <li class="flex items-center" data-id="annual-feature-3">
+                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                <span class="text-gray-700">Full candidate database access</span>
+              </li>
+              <li class="flex items-center" data-id="annual-feature-4">
+                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                <span class="text-gray-700">Premium analytics & reporting</span>
+              </li>
+              <li class="flex items-center" data-id="annual-feature-5">
+                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                <span class="text-gray-700">Dedicated account manager</span>
+              </li>
+              <li class="flex items-center" data-id="annual-feature-6">
+                <i data-lucide="check" class="w-5 h-5 text-green-500 mr-3"></i>
+                <span class="text-gray-700">24/7 premium support</span>
+              </li>
+            </ul>
+            
+            <button class="w-full bg-green-600 text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors" data-id="annual-button">
+              Start Annual Plan
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- FAQ Section -->
+      <div class="bg-white rounded-lg shadow-lg p-8" data-id="faq-section">
+        <h2 class="text-3xl font-bold text-gray-900 text-center mb-12" data-id="faq-title">Frequently Asked Questions</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8" data-id="faq-grid">
+          
+          <div data-id="faq-1">
+            <h3 class="text-lg font-semibold text-gray-900 mb-2" data-id="faq-question-1">How long do job postings stay active?</h3>
+            <p class="text-gray-600" data-id="faq-answer-1">Basic plans include 30-day postings, Premium plans include 60-day postings. You can extend or renew postings at any time.</p>
+          </div>
+
+          <div data-id="faq-2">
+            <h3 class="text-lg font-semibold text-gray-900 mb-2" data-id="faq-question-2">Can I cancel my subscription anytime?</h3>
+            <p class="text-gray-600" data-id="faq-answer-2">Yes, you can cancel your subscription at any time. You'll continue to have access until the end of your billing period.</p>
+          </div>
+
+          <div data-id="faq-3">
+            <h3 class="text-lg font-semibold text-gray-900 mb-2" data-id="faq-question-3">What payment methods do you accept?</h3>
+            <p class="text-gray-600" data-id="faq-answer-3">We accept all major credit cards, PayPal, and wire transfers for Enterprise plans.</p>
+          </div>
+
+          <div data-id="faq-4">
+            <h3 class="text-lg font-semibold text-gray-900 mb-2" data-id="faq-question-4">Do you offer refunds?</h3>
+            <p class="text-gray-600" data-id="faq-answer-4">We offer a 30-day money-back guarantee for subscription plans. Job postings are non-refundable once published.</p>
+          </div>
+
+          <div data-id="faq-5">
+            <h3 class="text-lg font-semibold text-gray-900 mb-2" data-id="faq-question-5">Is there a setup fee?</h3>
+            <p class="text-gray-600" data-id="faq-answer-5">No setup fees for any of our plans. You only pay for what you use.</p>
+          </div>
+
+          <div data-id="faq-6">
+            <h3 class="text-lg font-semibold text-gray-900 mb-2" data-id="faq-question-6">Can I upgrade or downgrade my plan?</h3>
+            <p class="text-gray-600" data-id="faq-answer-6">Yes, you can change your plan at any time. Changes take effect immediately, and billing is prorated.</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="bg-blue-600 text-white py-16" data-id="cta-section">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold mb-6" data-id="cta-title">Ready to Find Your Next Great Hire?</h2>
+      <p class="text-xl text-blue-100 mb-8" data-id="cta-subtitle">
+        Join thousands of companies who trust Hire Me! to connect them with top talent
+      </p>
+      <div class="space-x-4" data-id="cta-buttons">
+        <a href="post-job.html" 
+           class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-block" 
+           data-id="cta-post-job">
+          Post Your First Job
+        </a>
+        <a href="contact.html" 
+           class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors inline-block" 
+           data-id="cta-contact">
+          Contact Sales
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer-container" data-source="components/footer.html"></div>
+
+  <script type="module">
+    import { loadComponent } from './scripts/components/loader.js';
+    
+    // Load components
+    loadComponent('#navbar-container');
+    loadComponent('#footer-container');
+    
+    // Initialize icons
+    lucide.createIcons();
+
+    // Plan selection handlers
+    document.addEventListener('click', function(e) {
+      if (e.target.matches('[data-id$="-plan-button"]') || e.target.closest('[data-id$="-plan-button"]')) {
+        const planType = e.target.getAttribute('data-id')?.replace('-plan-button', '') || 
+                        e.target.closest('[data-id$="-plan-button"]')?.getAttribute('data-id')?.replace('-plan-button', '');
+        
+        if (planType === 'enterprise') {
+          // Redirect to contact page for enterprise
+          window.location.href = 'contact.html?plan=enterprise';
+        } else {
+          // Redirect to post-job page with selected plan
+          window.location.href = `post-job.html?plan=${planType}`;
+        }
+      }
+    });
+  </script>
+</body>
+</html>

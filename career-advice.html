@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Advice - Hire Me!</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://use.typekit.net/yjp3aho.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body { font-family: "sofia-pro", sans-serif; }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <!-- Navigation -->
+  <div id="navbar-container" data-source="components/navbar.html"></div>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-purple-600 to-blue-700 text-white py-16" data-id="career-advice-hero">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6" data-id="hero-title">Career Advice & Guidance</h1>
+        <p class="text-xl text-purple-100 max-w-3xl mx-auto mb-8" data-id="hero-subtitle">
+          Expert advice to accelerate your career growth, from job search strategies to professional development tips.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#featured-articles" class="bg-white text-purple-600 px-8 py-3 rounded-lg font-bold hover:bg-purple-50 transition-colors" data-id="browse-articles-btn">
+            Browse Articles
+          </a>
+          <a href="#career-tools" class="border-2 border-white text-white px-8 py-3 rounded-lg font-bold hover:bg-white hover:text-purple-600 transition-colors" data-id="career-tools-btn">
+            Career Tools
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="py-12 bg-white" data-id="categories-section">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4" data-id="category-tabs">
+        <button class="category-tab active px-4 py-2 rounded-lg border-2 border-blue-600 bg-blue-600 text-white font-medium hover:bg-blue-700 transition-colors" data-category="all" data-id="category-all">
+          All Topics
+        </button>
+        <button class="category-tab px-4 py-2 rounded-lg border-2 border-gray-200 text-gray-700 font-medium hover:border-blue-600 hover:text-blue-600 transition-colors" data-category="job-search" data-id="category-job-search">
+          Job Search
+        </button>
+        <button class="category-tab px-4 py-2 rounded-lg border-2 border-gray-200 text-gray-700 font-medium hover:border-blue-600 hover:text-blue-600 transition-colors" data-category="interviews" data-id="category-interviews">
+          Interviews
+        </button>
+        <button class="category-tab px-4 py-2 rounded-lg border-2 border-gray-200 text-gray-700 font-medium hover:border-blue-600 hover:text-blue-600 transition-colors" data-category="career-growth" data-id="category-career-growth">
+          Career Growth
+        </button>
+        <button class="category-tab px-4 py-2 rounded-lg border-2 border-gray-200 text-gray-700 font-medium hover:border-blue-600 hover:text-blue-600 transition-colors" data-category="salary" data-id="category-salary">
+          Salary & Benefits
+        </button>
+        <button class="category-tab px-4 py-2 rounded-lg border-2 border-gray-200 text-gray-700 font-medium hover:border-blue-600 hover:text-blue-600 transition-colors" data-category="skills" data-id="category-skills">
+          Skills
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Articles -->
+  <section id="featured-articles" class="py-16 bg-gray-50" data-id="featured-articles">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center" data-id="featured-title">Featured Articles</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-id="articles-grid">
+        <!-- Article 1 -->
+        <article class="bg-white rounded-lg shadow-lg overflow-hidden article-card" data-category="job-search" data-id="article-1">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&h=200&q=80" 
+               alt="Job Search Tips" 
+               class="w-full h-48 object-cover" data-id="article-1-image">
+          <div class="p-6" data-id="article-1-content">
+            <div class="flex items-center mb-3" data-id="article-1-meta">
+              <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium" data-id="article-1-category">Job Search</span>
+              <span class="text-gray-500 text-sm ml-3" data-id="article-1-date">March 15, 2024</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3" data-id="article-1-title">10 Essential Job Search Tips for 2024</h3>
+            <p class="text-gray-600 mb-4" data-id="article-1-excerpt">
+              Master the modern job search with these proven strategies that will help you stand out from the competition.
+            </p>
+            <div class="flex items-center justify-between" data-id="article-1-footer">
+              <span class="text-sm text-gray-500" data-id="article-1-read-time">5 min read</span>
+              <a href="#" class="text-blue-600 hover:text-blue-700 font-medium" data-id="article-1-link">Read More →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="bg-white rounded-lg shadow-lg overflow-hidden article-card" data-category="interviews" data-id="article-2">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&h=200&q=80" 
+               alt="Interview Success" 
+               class="w-full h-48 object-cover" data-id="article-2-image">
+          <div class="p-6" data-id="article-2-content">
+            <div class="flex items-center mb-3" data-id="article-2-meta">
+              <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium" data-id="article-2-category">Interviews</span>
+              <span class="text-gray-500 text-sm ml-3" data-id="article-2-date">March 12, 2024</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3" data-id="article-2-title">Ace Your Next Interview: Complete Guide</h3>
+            <p class="text-gray-600 mb-4" data-id="article-2-excerpt">
+              From preparation to follow-up, learn everything you need to know to excel in your job interviews.
+            </p>
+            <div class="flex items-center justify-between" data-id="article-2-footer">
+              <span class="text-sm text-gray-500" data-id="article-2-read-time">8 min read</span>
+              <a href="#" class="text-blue-600 hover:text-blue-700 font-medium" data-id="article-2-link">Read More →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 3 -->
+        <article class="bg-white rounded-lg shadow-lg overflow-hidden article-card" data-category="salary" data-id="article-3">
+          <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=400&h=200&q=80" 
+               alt="Salary Negotiation" 
+               class="w-full h-48 object-cover" data-id="article-3-image">
+          <div class="p-6" data-id="article-3-content">
+            <div class="flex items-center mb-3" data-id="article-3-meta">
+              <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium" data-id="article-3-category">Salary</span>
+              <span class="text-gray-500 text-sm ml-3" data-id="article-3-date">March 10, 2024</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3" data-id="article-3-title">Salary Negotiation: Get What You're Worth</h3>
+            <p class="text-gray-600 mb-4" data-id="article-3-excerpt">
+              Learn proven negotiation tactics to increase your salary and benefits package with confidence.
+            </p>
+            <div class="flex items-center justify-between" data-id="article-3-footer">
+              <span class="text-sm text-gray-500" data-id="article-3-read-time">7 min read</span>
+              <a href="#" class="text-blue-600 hover:text-blue-700 font-medium" data-id="article-3-link">Read More →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 4 -->
+        <article class="bg-white rounded-lg shadow-lg overflow-hidden article-card" data-category="career-growth" data-id="article-4">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&h=200&q=80" 
+               alt="Career Development" 
+               class="w-full h-48 object-cover" data-id="article-4-image">
+          <div class="p-6" data-id="article-4-content">
+            <div class="flex items-center mb-3" data-id="article-4-meta">
+              <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm font-medium" data-id="article-4-category">Career Growth</span>
+              <span class="text-gray-500 text-sm ml-3" data-id="article-4-date">March 8, 2024</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3" data-id="article-4-title">Building a Career Development Plan</h3>
+            <p class="text-gray-600 mb-4" data-id="article-4-excerpt">
+              Create a roadmap for your professional growth and achieve your long-term career objectives.
+            </p>
+            <div class="flex items-center justify-between" data-id="article-4-footer">
+              <span class="text-sm text-gray-500" data-id="article-4-read-time">6 min read</span>
+              <a href="#" class="text-blue-600 hover:text-blue-700 font-medium" data-id="article-4-link">Read More →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 5 -->
+        <article class="bg-white rounded-lg shadow-lg overflow-hidden article-card" data-category="skills" data-id="article-5">
+          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=400&h=200&q=80" 
+               alt="Skills Development" 
+               class="w-full h-48 object-cover" data-id="article-5-image">
+          <div class="p-6" data-id="article-5-content">
+            <div class="flex items-center mb-3" data-id="article-5-meta">
+              <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium" data-id="article-5-category">Skills</span>
+              <span class="text-gray-500 text-sm ml-3" data-id="article-5-date">March 5, 2024</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3" data-id="article-5-title">Top Skills Employers Want in 2024</h3>
+            <p class="text-gray-600 mb-4" data-id="article-5-excerpt">
+              Stay ahead of the curve by developing these in-demand skills that employers are actively seeking.
+            </p>
+            <div class="flex items-center justify-between" data-id="article-5-footer">
+              <span class="text-sm text-gray-500" data-id="article-5-read-time">4 min read</span>
+              <a href="#" class="text-blue-600 hover:text-blue-700 font-medium" data-id="article-5-link">Read More →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 6 -->
+        <article class="bg-white rounded-lg shadow-lg overflow-hidden article-card" data-category="job-search" data-id="article-6">
+          <img src="https://images.unsplash.com/photo-1486312338219-ce68e2c6b7d6?auto=format&fit=crop&w=400&h=200&q=80" 
+               alt="Remote Work" 
+               class="w-full h-48 object-cover" data-id="article-6-image">
+          <div class="p-6" data-id="article-6-content">
+            <div class="flex items-center mb-3" data-id="article-6-meta">
+              <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium" data-id="article-6-category">Job Search</span>
+              <span class="text-gray-500 text-sm ml-3" data-id="article-6-date">March 3, 2024</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3" data-id="article-6-title">Finding the Perfect Remote Job</h3>
+            <p class="text-gray-600 mb-4" data-id="article-6-excerpt">
+              Navigate the remote job market and land your ideal work-from-home position with these expert tips.
+            </p>
+            <div class="flex items-center justify-between" data-id="article-6-footer">
+              <span class="text-sm text-gray-500" data-id="article-6-read-time">6 min read</span>
+              <a href="#" class="text-blue-600 hover:text-blue-700 font-medium" data-id="article-6-link">Read More →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Career Tools -->
+  <section id="career-tools" class="py-16 bg-white" data-id="career-tools-section">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center" data-id="tools-title">Career Tools & Resources</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-id="tools-grid">
+        <!-- Resume Builder -->
+        <div class="bg-blue-50 rounded-lg p-6 border border-blue-200" data-id="tool-resume">
+          <div class="flex items-center mb-4" data-id="tool-resume-header">
+            <i data-lucide="file-text" class="w-8 h-8 text-blue-600 mr-3"></i>
+            <h3 class="text-xl font-bold text-gray-900" data-id="tool-resume-title">Resume Builder</h3>
+          </div>
+          <p class="text-gray-600 mb-4" data-id="tool-resume-desc">
+            Create a professional resume with our easy-to-use builder and ATS-friendly templates.
+          </p>
+          <a href="resume-builder.html" class="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium" data-id="tool-resume-link">
+            Get Started <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+          </a>
+        </div>
+
+        <!-- Salary Calculator -->
+        <div class="bg-green-50 rounded-lg p-6 border border-green-200" data-id="tool-salary">
+          <div class="flex items-center mb-4" data-id="tool-salary-header">
+            <i data-lucide="calculator" class="w-8 h-8 text-green-600 mr-3"></i>
+            <h3 class="text-xl font-bold text-gray-900" data-id="tool-salary-title">Salary Calculator</h3>
+          </div>
+          <p class="text-gray-600 mb-4" data-id="tool-salary-desc">
+            Research salary ranges for your role and location to negotiate with confidence.
+          </p>
+          <a href="salary-guide.html" class="inline-flex items-center text-green-600 hover:text-green-700 font-medium" data-id="tool-salary-link">
+            Calculate Now <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+          </a>
+        </div>
+
+        <!-- Interview Prep -->
+        <div class="bg-purple-50 rounded-lg p-6 border border-purple-200" data-id="tool-interview">
+          <div class="flex items-center mb-4" data-id="tool-interview-header">
+            <i data-lucide="mic" class="w-8 h-8 text-purple-600 mr-3"></i>
+            <h3 class="text-xl font-bold text-gray-900" data-id="tool-interview-title">Interview Prep</h3>
+          </div>
+          <p class="text-gray-600 mb-4" data-id="tool-interview-desc">
+            Practice with common interview questions and get tips from industry experts.
+          </p>
+          <a href="#" class="inline-flex items-center text-purple-600 hover:text-purple-700 font-medium" data-id="tool-interview-link">
+            Start Practicing <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+          </a>
+        </div>
+
+        <!-- Career Assessment -->
+        <div class="bg-orange-50 rounded-lg p-6 border border-orange-200" data-id="tool-assessment">
+          <div class="flex items-center mb-4" data-id="tool-assessment-header">
+            <i data-lucide="target" class="w-8 h-8 text-orange-600 mr-3"></i>
+            <h3 class="text-xl font-bold text-gray-900" data-id="tool-assessment-title">Career Assessment</h3>
+          </div>
+          <p class="text-gray-600 mb-4" data-id="tool-assessment-desc">
+            Discover your strengths and find careers that match your skills and interests.
+          </p>
+          <a href="#" class="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium" data-id="tool-assessment-link">
+            Take Assessment <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+          </a>
+        </div>
+
+        <!-- Skills Test -->
+        <div class="bg-indigo-50 rounded-lg p-6 border border-indigo-200" data-id="tool-skills">
+          <div class="flex items-center mb-4" data-id="tool-skills-header">
+            <i data-lucide="brain" class="w-8 h-8 text-indigo-600 mr-3"></i>
+            <h3 class="text-xl font-bold text-gray-900" data-id="tool-skills-title">Skills Testing</h3>
+          </div>
+          <p class="text-gray-600 mb-4" data-id="tool-skills-desc">
+            Validate your technical skills with our comprehensive testing platform.
+          </p>
+          <a href="#" class="inline-flex items-center text-indigo-600 hover:text-indigo-700 font-medium" data-id="tool-skills-link">
+            Test Skills <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+          </a>
+        </div>
+
+        <!-- Networking Guide -->
+        <div class="bg-pink-50 rounded-lg p-6 border border-pink-200" data-id="tool-networking">
+          <div class="flex items-center mb-4" data-id="tool-networking-header">
+            <i data-lucide="users" class="w-8 h-8 text-pink-600 mr-3"></i>
+            <h3 class="text-xl font-bold text-gray-900" data-id="tool-networking-title">Networking Guide</h3>
+          </div>
+          <p class="text-gray-600 mb-4" data-id="tool-networking-desc">
+            Learn how to build professional relationships and expand your network effectively.
+          </p>
+          <a href="#" class="inline-flex items-center text-pink-600 hover:text-pink-700 font-medium" data-id="tool-networking-link">
+            Learn More <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="py-16 bg-gray-100" data-id="newsletter-section">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold text-gray-900 mb-4" data-id="newsletter-title">Stay Updated</h2>
+      <p class="text-xl text-gray-600 mb-8" data-id="newsletter-subtitle">
+        Get the latest career advice and job market insights delivered to your inbox weekly.
+      </p>
+      <form class="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto" data-id="newsletter-form">
+        <input type="email" 
+               placeholder="Enter your email address" 
+               class="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
+               data-id="newsletter-email">
+        <button type="submit" 
+                class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors font-medium" 
+                data-id="newsletter-submit">
+          Subscribe
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer-container" data-source="components/footer.html"></div>
+
+  <script type="module">
+    import { loadComponent } from './scripts/components/loader.js';
+    
+    // Load components
+    loadComponent('#navbar-container');
+    loadComponent('#footer-container');
+    
+    // Initialize icons after components load
+    setTimeout(() => {
+      lucide.createIcons();
+    }, 100);
+
+    // Category filtering functionality
+    document.addEventListener('DOMContentLoaded', () => {
+      const categoryTabs = document.querySelectorAll('.category-tab');
+      const articleCards = document.querySelectorAll('.article-card');
+
+      categoryTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          const category = tab.getAttribute('data-category');
+          
+          // Update active tab
+          categoryTabs.forEach(t => {
+            t.classList.remove('active', 'bg-blue-600', 'text-white', 'border-blue-600');
+            t.classList.add('border-gray-200', 'text-gray-700');
+          });
+          tab.classList.add('active', 'bg-blue-600', 'text-white', 'border-blue-600');
+          tab.classList.remove('border-gray-200', 'text-gray-700');
+
+          // Filter articles
+          articleCards.forEach(card => {
+            if (category === 'all' || card.getAttribute('data-category') === category) {
+              card.style.display = 'block';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // Newsletter form
+      const newsletterForm = document.querySelector('[data-id="newsletter-form"]');
+      newsletterForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const email = document.querySelector('[data-id="newsletter-email"]').value;
+        if (email) {
+          alert('Thank you for subscribing! You will receive our weekly career newsletter.');
+          document.querySelector('[data-id="newsletter-email"]').value = '';
+        }
+      });
+    });
+  </script>
+</body>
+</html>

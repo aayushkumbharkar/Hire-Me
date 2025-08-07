@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Companies - Hire Me!</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://use.typekit.net/yjp3aho.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body { font-family: "sofia-pro", sans-serif; }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <!-- Navigation -->
+  <div id="navbar-container" data-source="components/navbar.html"></div>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-blue-600 to-blue-800 text-white py-16" data-id="companies-hero">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6" data-id="hero-title">Discover Great Companies</h1>
+        <p class="text-xl text-blue-100 max-w-3xl mx-auto" data-id="hero-subtitle">
+          Explore top companies that are actively hiring. Learn about their culture, values, and open positions.
+        </p>
+      </div>
+
+      <!-- Search Bar -->
+      <div class="max-w-2xl mx-auto" data-id="search-section">
+        <div class="bg-white rounded-lg p-4 shadow-lg">
+          <div class="flex flex-col sm:flex-row gap-3">
+            <div class="flex-1 relative" data-id="company-search">
+              <i data-lucide="building" class="absolute left-3 top-3 w-5 h-5 text-gray-400"></i>
+              <input type="text" 
+                     placeholder="Search companies..." 
+                     class="w-full pl-10 pr-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                     data-id="company-search-input">
+            </div>
+            <button class="bg-blue-600 text-white px-8 py-2 rounded-lg hover:bg-blue-700 transition-colors font-medium" data-id="search-button">
+              <i data-lucide="search" class="w-5 h-5 inline mr-2"></i>
+              Search
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filters -->
+  <section class="py-8 bg-white border-b" data-id="filters-section">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-wrap items-center gap-4">
+        <span class="font-medium text-gray-700" data-id="filter-label">Filter by:</span>
+        <select class="px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" data-id="industry-filter">
+          <option>All Industries</option>
+          <option>Technology</option>
+          <option>Healthcare</option>
+          <option>Finance</option>
+          <option>Education</option>
+          <option>Retail</option>
+        </select>
+        <select class="px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" data-id="size-filter">
+          <option>Company Size</option>
+          <option>1-10 employees</option>
+          <option>11-50 employees</option>
+          <option>51-200 employees</option>
+          <option>201-1000 employees</option>
+          <option>1000+ employees</option>
+        </select>
+        <select class="px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" data-id="location-filter">
+          <option>All Locations</option>
+          <option>Remote</option>
+          <option>New York, NY</option>
+          <option>San Francisco, CA</option>
+          <option>Austin, TX</option>
+          <option>Seattle, WA</option>
+        </select>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Companies -->
+  <section class="py-16 bg-white" data-id="featured-section">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-gray-900 mb-12" data-id="featured-title">Featured Companies</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-id="featured-companies">
+        <!-- Company Card 1 -->
+        <div class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow" data-id="company-card-1">
+          <div class="flex items-center mb-4" data-id="company-header-1">
+            <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=64&h=64&q=80" 
+                 alt="TechCorp" 
+                 class="w-16 h-16 rounded-lg object-cover mr-4" data-id="company-logo-1">
+            <div>
+              <h3 class="text-xl font-bold text-gray-900" data-id="company-name-1">TechCorp Solutions</h3>
+              <p class="text-gray-600" data-id="company-industry-1">Technology</p>
+            </div>
+          </div>
+          <p class="text-gray-700 mb-4" data-id="company-description-1">
+            Leading software development company specializing in innovative solutions for modern businesses.
+          </p>
+          <div class="flex items-center justify-between mb-4" data-id="company-stats-1">
+            <span class="text-sm text-gray-500" data-id="company-size-1">500-1000 employees</span>
+            <span class="text-sm text-blue-600 font-medium" data-id="company-openings-1">15 open positions</span>
+          </div>
+          <div class="flex gap-2 mb-4" data-id="company-tags-1">
+            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm" data-id="tag-1-1">Remote</span>
+            <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm" data-id="tag-1-2">Great Benefits</span>
+          </div>
+          <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors" data-id="view-company-1">
+            View Company
+          </button>
+        </div>
+
+        <!-- Company Card 2 -->
+        <div class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow" data-id="company-card-2">
+          <div class="flex items-center mb-4" data-id="company-header-2">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=64&h=64&q=80" 
+                 alt="HealthPlus" 
+                 class="w-16 h-16 rounded-lg object-cover mr-4" data-id="company-logo-2">
+            <div>
+              <h3 class="text-xl font-bold text-gray-900" data-id="company-name-2">HealthPlus Medical</h3>
+              <p class="text-gray-600" data-id="company-industry-2">Healthcare</p>
+            </div>
+          </div>
+          <p class="text-gray-700 mb-4" data-id="company-description-2">
+            Comprehensive healthcare services with a focus on patient care and medical innovation.
+          </p>
+          <div class="flex items-center justify-between mb-4" data-id="company-stats-2">
+            <span class="text-sm text-gray-500" data-id="company-size-2">1000+ employees</span>
+            <span class="text-sm text-blue-600 font-medium" data-id="company-openings-2">23 open positions</span>
+          </div>
+          <div class="flex gap-2 mb-4" data-id="company-tags-2">
+            <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm" data-id="tag-2-1">Healthcare</span>
+            <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm" data-id="tag-2-2">Growing</span>
+          </div>
+          <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors" data-id="view-company-2">
+            View Company
+          </button>
+        </div>
+
+        <!-- Company Card 3 -->
+        <div class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow" data-id="company-card-3">
+          <div class="flex items-center mb-4" data-id="company-header-3">
+            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=64&h=64&q=80" 
+                 alt="FinanceForward" 
+                 class="w-16 h-16 rounded-lg object-cover mr-4" data-id="company-logo-3">
+            <div>
+              <h3 class="text-xl font-bold text-gray-900" data-id="company-name-3">FinanceForward</h3>
+              <p class="text-gray-600" data-id="company-industry-3">Finance</p>
+            </div>
+          </div>
+          <p class="text-gray-700 mb-4" data-id="company-description-3">
+            Modern financial services company providing innovative banking and investment solutions.
+          </p>
+          <div class="flex items-center justify-between mb-4" data-id="company-stats-3">
+            <span class="text-sm text-gray-500" data-id="company-size-3">200-500 employees</span>
+            <span class="text-sm text-blue-600 font-medium" data-id="company-openings-3">8 open positions</span>
+          </div>
+          <div class="flex gap-2 mb-4" data-id="company-tags-3">
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm" data-id="tag-3-1">Fintech</span>
+            <span class="px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm" data-id="tag-3-2">Innovative</span>
+          </div>
+          <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors" data-id="view-company-3">
+            View Company
+          </button>
+        </div>
+
+        <!-- Company Card 4 -->
+        <div class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow" data-id="company-card-4">
+          <div class="flex items-center mb-4" data-id="company-header-4">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=64&h=64&q=80" 
+                 alt="EduTech" 
+                 class="w-16 h-16 rounded-lg object-cover mr-4" data-id="company-logo-4">
+            <div>
+              <h3 class="text-xl font-bold text-gray-900" data-id="company-name-4">EduTech Learning</h3>
+              <p class="text-gray-600" data-id="company-industry-4">Education</p>
+            </div>
+          </div>
+          <p class="text-gray-700 mb-4" data-id="company-description-4">
+            Revolutionizing education through technology and innovative learning platforms.
+          </p>
+          <div class="flex items-center justify-between mb-4" data-id="company-stats-4">
+            <span class="text-sm text-gray-500" data-id="company-size-4">100-200 employees</span>
+            <span class="text-sm text-blue-600 font-medium" data-id="company-openings-4">12 open positions</span>
+          </div>
+          <div class="flex gap-2 mb-4" data-id="company-tags-4">
+            <span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm" data-id="tag-4-1">EdTech</span>
+            <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm" data-id="tag-4-2">Mission Driven</span>
+          </div>
+          <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors" data-id="view-company-4">
+            View Company
+          </button>
+        </div>
+
+        <!-- Company Card 5 -->
+        <div class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow" data-id="company-card-5">
+          <div class="flex items-center mb-4" data-id="company-header-5">
+            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=64&h=64&q=80" 
+                 alt="RetailMax" 
+                 class="w-16 h-16 rounded-lg object-cover mr-4" data-id="company-logo-5">
+            <div>
+              <h3 class="text-xl font-bold text-gray-900" data-id="company-name-5">RetailMax</h3>
+              <p class="text-gray-600" data-id="company-industry-5">Retail</p>
+            </div>
+          </div>
+          <p class="text-gray-700 mb-4" data-id="company-description-5">
+            Leading retail chain providing quality products and exceptional customer service nationwide.
+          </p>
+          <div class="flex items-center justify-between mb-4" data-id="company-stats-5">
+            <span class="text-sm text-gray-500" data-id="company-size-5">1000+ employees</span>
+            <span class="text-sm text-blue-600 font-medium" data-id="company-openings-5">45 open positions</span>
+          </div>
+          <div class="flex gap-2 mb-4" data-id="company-tags-5">
+            <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-full text-sm" data-id="tag-5-1">Retail</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm" data-id="tag-5-2">Nationwide</span>
+          </div>
+          <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors" data-id="view-company-5">
+            View Company
+          </button>
+        </div>
+
+        <!-- Company Card 6 -->
+        <div class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow" data-id="company-card-6">
+          <div class="flex items-center mb-4" data-id="company-header-6">
+            <img src="https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?auto=format&fit=crop&w=64&h=64&q=80" 
+                 alt="GreenTech" 
+                 class="w-16 h-16 rounded-lg object-cover mr-4" data-id="company-logo-6">
+            <div>
+              <h3 class="text-xl font-bold text-gray-900" data-id="company-name-6">GreenTech Innovations</h3>
+              <p class="text-gray-600" data-id="company-industry-6">Clean Energy</p>
+            </div>
+          </div>
+          <p class="text-gray-700 mb-4" data-id="company-description-6">
+            Pioneering sustainable technology solutions for a cleaner and greener future.
+          </p>
+          <div class="flex items-center justify-between mb-4" data-id="company-stats-6">
+            <span class="text-sm text-gray-500" data-id="company-size-6">50-100 employees</span>
+            <span class="text-sm text-blue-600 font-medium" data-id="company-openings-6">7 open positions</span>
+          </div>
+          <div class="flex gap-2 mb-4" data-id="company-tags-6">
+            <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm" data-id="tag-6-1">Sustainability</span>
+            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm" data-id="tag-6-2">Innovation</span>
+          </div>
+          <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors" data-id="view-company-6">
+            View Company
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="py-16 bg-gray-100" data-id="stats-section">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4" data-id="stats-title">Companies Trust Us</h2>
+        <p class="text-lg text-gray-600" data-id="stats-subtitle">Join thousands of companies that find great talent through our platform</p>
+      </div>
+      
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8" data-id="stats-grid">
+        <div class="text-center" data-id="stat-1">
+          <div class="text-4xl font-bold text-blue-600 mb-2" data-id="stat-number-1">2,500+</div>
+          <div class="text-gray-600" data-id="stat-label-1">Active Companies</div>
+        </div>
+        <div class="text-center" data-id="stat-2">
+          <div class="text-4xl font-bold text-blue-600 mb-2" data-id="stat-number-2">15,000+</div>
+          <div class="text-gray-600" data-id="stat-label-2">Job Postings</div>
+        </div>
+        <div class="text-center" data-id="stat-3">
+          <div class="text-4xl font-bold text-blue-600 mb-2" data-id="stat-number-3">50+</div>
+          <div class="text-gray-600" data-id="stat-label-3">Industries</div>
+        </div>
+        <div class="text-center" data-id="stat-4">
+          <div class="text-4xl font-bold text-blue-600 mb-2" data-id="stat-number-4">98%</div>
+          <div class="text-gray-600" data-id="stat-label-4">Success Rate</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 bg-blue-600" data-id="cta-section">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold text-white mb-4" data-id="cta-title">Ready to Find Your Next Great Hire?</h2>
+      <p class="text-xl text-blue-100 mb-8" data-id="cta-subtitle">
+        Join these amazing companies and start hiring top talent today.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="post-job.html" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-blue-50 transition-colors" data-id="cta-post-job">
+          Post a Job
+        </a>
+        <a href="pricing.html" class="border-2 border-white text-white px-8 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition-colors" data-id="cta-view-pricing">
+          View Pricing
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer-container" data-source="components/footer.html"></div>
+
+  <script type="module">
+    import { loadComponent } from './scripts/components/loader.js';
+    
+    // Load components
+    loadComponent('#navbar-container');
+    loadComponent('#footer-container');
+    
+    // Initialize icons after components load
+    setTimeout(() => {
+      lucide.createIcons();
+    }, 100);
+
+    // Company search functionality
+    document.addEventListener('DOMContentLoaded', () => {
+      const searchInput = document.querySelector('[data-id="company-search-input"]');
+      const searchButton = document.querySelector('[data-id="search-button"]');
+      const industryFilter = document.querySelector('[data-id="industry-filter"]');
+      const sizeFilter = document.querySelector('[data-id="size-filter"]');
+      const locationFilter = document.querySelector('[data-id="location-filter"]');
+
+      // Search functionality
+      const performSearch = () => {
+        const searchTerm = searchInput.value.toLowerCase();
+        const selectedIndustry = industryFilter.value;
+        const selectedSize = sizeFilter.value;
+        const selectedLocation = locationFilter.value;
+
+        // In a real app, this would filter the companies
+        console.log('Search:', { searchTerm, selectedIndustry, selectedSize, selectedLocation });
+      };
+
+      searchButton.addEventListener('click', performSearch);
+      searchInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') performSearch();
+      });
+
+      // Filter change handlers
+      [industryFilter, sizeFilter, locationFilter].forEach(filter => {
+        filter.addEventListener('change', performSearch);
+      });
+
+      // Company view handlers
+      document.querySelectorAll('[data-id^="view-company-"]').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const companyId = e.target.getAttribute('data-id').split('-').pop();
+          // In a real app, this would navigate to company detail page
+          alert(`Viewing company ${companyId} details`);
+        });
+      });
+    });
+  </script>
+</body>
+</html>

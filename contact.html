@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Hire Me!</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://use.typekit.net/yjp3aho.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body { font-family: "sofia-pro", sans-serif; }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <!-- Navigation -->
+  <div id="navbar-container" data-source="components/navbar.html"></div>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-teal-600 to-blue-700 text-white py-16" data-id="contact-hero">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6" data-id="hero-title">Get In Touch</h1>
+        <p class="text-xl text-teal-100 max-w-3xl mx-auto" data-id="hero-subtitle">
+          Have questions about our platform? Need help with your account? We're here to help you succeed.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Information -->
+  <section class="py-16 bg-white" data-id="contact-info">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        <!-- Phone -->
+        <div class="text-center" data-id="contact-phone">
+          <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4" data-id="phone-icon-wrapper">
+            <i data-lucide="phone" class="w-8 h-8 text-blue-600"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-2" data-id="phone-title">Phone Support</h3>
+          <p class="text-gray-600 mb-2" data-id="phone-description">Speak with our support team</p>
+          <p class="text-lg font-semibold text-blue-600" data-id="phone-number">1-800-HIRE-ME1</p>
+          <p class="text-sm text-gray-500" data-id="phone-hours">Mon-Fri 9AM-6PM EST</p>
+        </div>
+
+        <!-- Email -->
+        <div class="text-center" data-id="contact-email">
+          <div class="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4" data-id="email-icon-wrapper">
+            <i data-lucide="mail" class="w-8 h-8 text-green-600"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-2" data-id="email-title">Email Support</h3>
+          <p class="text-gray-600 mb-2" data-id="email-description">Get detailed help via email</p>
+          <p class="text-lg font-semibold text-green-600" data-id="email-address">support@hireme.com</p>
+          <p class="text-sm text-gray-500" data-id="email-response">Response within 24 hours</p>
+        </div>
+
+        <!-- Live Chat -->
+        <div class="text-center" data-id="contact-chat">
+          <div class="bg-purple-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4" data-id="chat-icon-wrapper">
+            <i data-lucide="message-circle" class="w-8 h-8 text-purple-600"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-2" data-id="chat-title">Live Chat</h3>
+          <p class="text-gray-600 mb-2" data-id="chat-description">Instant help when you need it</p>
+          <button class="text-lg font-semibold text-purple-600 hover:text-purple-700 transition-colors" data-id="chat-button">
+            Start Chat Now
+          </button>
+          <p class="text-sm text-gray-500" data-id="chat-hours">Available 24/7</p>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12" data-id="contact-form-section">
+        <div data-id="form-container">
+          <h2 class="text-3xl font-bold text-gray-900 mb-6" data-id="form-title">Send Us a Message</h2>
+          <form class="space-y-6" data-id="contact-form">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6" data-id="name-fields">
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2" data-id="first-name-label">First Name</label>
+                <input type="text" 
+                       required
+                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" 
+                       data-id="first-name-input"
+                       placeholder="John">
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2" data-id="last-name-label">Last Name</label>
+                <input type="text" 
+                       required
+                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" 
+                       data-id="last-name-input"
+                       placeholder="Doe">
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2" data-id="email-label">Email Address</label>
+              <input type="email" 
+                     required
+                     class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" 
+                     data-id="email-input"
+                     placeholder="john.doe@example.com">
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2" data-id="phone-label">Phone Number (Optional)</label>
+              <input type="tel" 
+                     class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" 
+                     data-id="phone-input"
+                     placeholder="(555) 123-4567">
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2" data-id="account-type-label">Account Type</label>
+              <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" 
+                      data-id="account-type-select">
+                <option value="">Select Account Type</option>
+                <option value="job-seeker">Job Seeker</option>
+                <option value="employer">Employer</option>
+                <option value="recruiter">Recruiter</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2" data-id="subject-label">Subject</label>
+              <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" 
+                      data-id="subject-select">
+                <option value="">Select a Subject</option>
+                <option value="account-help">Account Help</option>
+                <option value="technical-issue">Technical Issue</option>
+                <option value="billing-question">Billing Question</option>
+                <option value="feature-request">Feature Request</option>
+                <option value="partnership">Partnership Inquiry</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2" data-id="message-label">Message</label>
+              <textarea rows="6" 
+                        required
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-vertical" 
+                        data-id="message-textarea"
+                        placeholder="Please describe your question or concern in detail..."></textarea>
+            </div>
+
+            <div class="flex items-start" data-id="privacy-checkbox">
+              <input type="checkbox" 
+                     required
+                     class="mt-1 mr-3 w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500" 
+                     data-id="privacy-input">
+              <label class="text-sm text-gray-700" data-id="privacy-label">
+                I agree to the <a href="privacy-policy.html" class="text-blue-600 hover:text-blue-700 underline" data-id="privacy-link">Privacy Policy</a> 
+                and consent to being contacted regarding my inquiry.
+              </label>
+            </div>
+
+            <button type="submit" 
+                    class="w-full bg-blue-600 text-white px-6 py-4 rounded-lg hover:bg-blue-700 transition-colors font-medium text-lg" 
+                    data-id="submit-button">
+              <i data-lucide="send" class="w-5 h-5 inline mr-2"></i>
+              Send Message
+            </button>
+          </form>
+        </div>
+
+        <!-- Additional Information -->
+        <div data-id="additional-info">
+          <h2 class="text-3xl font-bold text-gray-900 mb-6" data-id="additional-info-title">How We Can Help</h2>
+          
+          <div class="space-y-6" data-id="help-categories">
+            <div class="bg-gray-50 rounded-lg p-6" data-id="help-job-seekers">
+              <h3 class="text-xl font-semibold text-gray-900 mb-3" data-id="help-job-seekers-title">For Job Seekers</h3>
+              <ul class="space-y-2 text-gray-600" data-id="job-seeker-help-list">
+                <li class="flex items-center" data-id="help-item-1">
+                  <i data-lucide="check" class="w-4 h-4 text-green-600 mr-2"></i>
+                  Profile optimization tips
+                </li>
+                <li class="flex items-center" data-id="help-item-2">
+                  <i data-lucide="check" class="w-4 h-4 text-green-600 mr-2"></i>
+                  Application troubleshooting
+                </li>
+                <li class="flex items-center" data-id="help-item-3">
+                  <i data-lucide="check" class="w-4 h-4 text-green-600 mr-2"></i>
+                  Interview preparation guidance
+                </li>
+                <li class="flex items-center" data-id="help-item-4">
+                  <i data-lucide="check" class="w-4 h-4 text-green-600 mr-2"></i>
+                  Resume builder support
+                </li>
+              </ul>
+            </div>
+
+            <div class="bg-gray-50 rounded-lg p-6" data-id="help-employers">
+              <h3 class="text-xl font-semibold text-gray-900 mb-3" data-id="help-employers-title">For Employers</h3>
+              <ul class="space-y-2 text-gray-600" data-id="employer-help-list">
+                <li class="flex items-center" data-id="help-item-5">
+                  <i data-lucide="check" class="w-4 h-4 text-green-600 mr-2"></i>
+                  Job posting optimization
+                </li>
+                <li class="flex items-center" data-id="help-item-6">
+                  <i data-lucide="check" class="w-4 h-4 text-green-600 mr-2"></i>
+                  Candidate screening tools
+                </li>
+                <li class="flex items-center" data-id="help-item-7">
+                  <i data-lucide="check" class="w-4 h-4 text-green-600 mr-2"></i>
+                  Billing and subscription support
+                </li>
+                <li class="flex items-center" data-id="help-item-8">
+                  <i data-lucide="check" class="w-4 h-4 text-green-600 mr-2"></i>
+                  Integration assistance
+                </li>
+              </ul>
+            </div>
+
+            <div class="bg-blue-50 rounded-lg p-6" data-id="urgent-support">
+              <h3 class="text-xl font-semibold text-gray-900 mb-3" data-id="urgent-support-title">Need Urgent Help?</h3>
+              <p class="text-gray-600 mb-4" data-id="urgent-support-desc">
+                For urgent issues that need immediate attention, please call our priority support line.
+              </p>
+              <div class="flex items-center justify-between" data-id="urgent-contact">
+                <div>
+                  <p class="font-semibold text-gray-900" data-id="urgent-phone">Priority Support: 1-800-URGENT1</p>
+                  <p class="text-sm text-gray-600" data-id="urgent-hours">Available 24/7 for critical issues</p>
+                </div>
+                <i data-lucide="phone-call" class="w-8 h-8 text-blue-600"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Office Locations -->
+          <div class="mt-8" data-id="office-locations">
+            <h3 class="text-xl font-semibold text-gray-900 mb-4" data-id="locations-title">Our Offices</h3>
+            <div class="space-y-4" data-id="locations-list">
+              <div class="flex items-start" data-id="office-1">
+                <i data-lucide="map-pin" class="w-5 h-5 text-gray-400 mr-3 mt-1"></i>
+                <div>
+                  <h4 class="font-medium text-gray-900" data-id="office-1-title">New York Headquarters</h4>
+                  <p class="text-gray-600" data-id="office-1-address">123 Business Ave, Suite 100<br>New York, NY 10001</p>
+                </div>
+              </div>
+              <div class="flex items-start" data-id="office-2">
+                <i data-lucide="map-pin" class="w-5 h-5 text-gray-400 mr-3 mt-1"></i>
+                <div>
+                  <h4 class="font-medium text-gray-900" data-id="office-2-title">San Francisco Office</h4>
+                  <p class="text-gray-600" data-id="office-2-address">456 Tech Street, Floor 25<br>San Francisco, CA 94105</p>
+                </div>
+              </div>
+              <div class="flex items-start" data-id="office-3">
+                <i data-lucide="map-pin" class="w-5 h-5 text-gray-400 mr-3 mt-1"></i>
+                <div>
+                  <h4 class="font-medium text-gray-900" data-id="office-3-title">Austin Branch</h4>
+                  <p class="text-gray-600" data-id="office-3-address">789 Innovation Blvd<br>Austin, TX 73301</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16 bg-gray-50" data-id="faq-section">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center" data-id="faq-title">Frequently Asked Questions</h2>
+      
+      <div class="space-y-6" data-id="faq-list">
+        <div class="bg-white rounded-lg shadow-md" data-id="faq-1">
+          <button class="w-full px-6 py-4 text-left focus:outline-none faq-toggle" data-id="faq-1-toggle">
+            <div class="flex items-center justify-between">
+              <h3 class="text-lg font-semibold text-gray-900" data-id="faq-1-question">How do I reset my password?</h3>
+              <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 transition-transform"></i>
+            </div>
+          </button>
+          <div class="faq-answer hidden px-6 pb-4" data-id="faq-1-answer">
+            <p class="text-gray-600">
+              You can reset your password by clicking the "Forgot Password" link on the login page. 
+              Enter your email address, and we'll send you a secure link to create a new password.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md" data-id="faq-2">
+          <button class="w-full px-6 py-4 text-left focus:outline-none faq-toggle" data-id="faq-2-toggle">
+            <div class="flex items-center justify-between">
+              <h3 class="text-lg font-semibold text-gray-900" data-id="faq-2-question">How long do job postings stay active?</h3>
+              <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 transition-transform"></i>
+            </div>
+          </button>
+          <div class="faq-answer hidden px-6 pb-4" data-id="faq-2-answer">
+            <p class="text-gray-600">
+              Job postings remain active for 30 days by default. You can extend or renew postings 
+              from your employer dashboard. Premium plans include longer posting durations.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md" data-id="faq-3">
+          <button class="w-full px-6 py-4 text-left focus:outline-none faq-toggle" data-id="faq-3-toggle">
+            <div class="flex items-center justify-between">
+              <h3 class="text-lg font-semibold text-gray-900" data-id="faq-3-question">Can I edit my profile after creating it?</h3>
+              <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 transition-transform"></i>
+            </div>
+          </button>
+          <div class="faq-answer hidden px-6 pb-4" data-id="faq-3-answer">
+            <p class="text-gray-600">
+              Yes, you can edit your profile anytime by logging into your account and visiting 
+              the "My Profile" section. Keep your information updated to attract better opportunities.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md" data-id="faq-4">
+          <button class="w-full px-6 py-4 text-left focus:outline-none faq-toggle" data-id="faq-4-toggle">
+            <div class="flex items-center justify-between">
+              <h3 class="text-lg font-semibold text-gray-900" data-id="faq-4-question">What payment methods do you accept?</h3>
+              <i data-lucide="chevron-down" class="w-5 h-5 text-gray-500 transition-transform"></i>
+            </div>
+          </button>
+          <div class="faq-answer hidden px-6 pb-4" data-id="faq-4-answer">
+            <p class="text-gray-600">
+              We accept all major credit cards (Visa, MasterCard, American Express), 
+              PayPal, and bank transfers for enterprise accounts. All transactions are secure and encrypted.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer-container" data-source="components/footer.html"></div>
+
+  <script type="module">
+    import { loadComponent } from './scripts/components/loader.js';
+    
+    // Load components
+    loadComponent('#navbar-container');
+    loadComponent('#footer-container');
+    
+    // Initialize icons after components load
+    setTimeout(() => {
+      lucide.createIcons();
+    }, 100);
+
+    // Contact form functionality
+    document.addEventListener('DOMContentLoaded', () => {
+      // Contact form submission
+      const contactForm = document.querySelector('[data-id="contact-form"]');
+      contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        // Get form data
+        const formData = {
+          firstName: document.querySelector('[data-id="first-name-input"]').value,
+          lastName: document.querySelector('[data-id="last-name-input"]').value,
+          email: document.querySelector('[data-id="email-input"]').value,
+          phone: document.querySelector('[data-id="phone-input"]').value,
+          accountType: document.querySelector('[data-id="account-type-select"]').value,
+          subject: document.querySelector('[data-id="subject-select"]').value,
+          message: document.querySelector('[data-id="message-textarea"]').value
+        };
+
+        // In a real app, this would send to server
+        console.log('Contact form submitted:', formData);
+        
+        // Show success message
+        alert('Thank you for your message! We will get back to you within 24 hours.');
+        
+        // Reset form
+        contactForm.reset();
+      });
+
+      // Live chat functionality
+      document.querySelector('[data-id="chat-button"]').addEventListener('click', () => {
+        // In a real app, this would open chat widget
+        alert('Live chat feature would be integrated here (e.g., Intercom, Zendesk Chat, etc.)');
+      });
+
+      // FAQ toggle functionality
+      const faqToggles = document.querySelectorAll('.faq-toggle');
+      faqToggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
+          const answer = toggle.nextElementSibling;
+          const icon = toggle.querySelector('i[data-lucide="chevron-down"]');
+          
+          // Close all other FAQs
+          faqToggles.forEach(otherToggle => {
+            if (otherToggle !== toggle) {
+              const otherAnswer = otherToggle.nextElementSibling;
+              const otherIcon = otherToggle.querySelector('i[data-lucide="chevron-down"]');
+              otherAnswer.classList.add('hidden');
+              otherIcon.style.transform = 'rotate(0deg)';
+            }
+          });
+
+          // Toggle current FAQ
+          if (answer.classList.contains('hidden')) {
+            answer.classList.remove('hidden');
+            icon.style.transform = 'rotate(180deg)';
+          } else {
+            answer.classList.add('hidden');
+            icon.style.transform = 'rotate(0deg)';
+          }
+        });
+      });
+
+      // Form validation enhancement
+      const requiredFields = contactForm.querySelectorAll('input[required], textarea[required]');
+      requiredFields.forEach(field => {
+        field.addEventListener('blur', () => {
+          if (field.value.trim() === '') {
+            field.classList.add('border-red-500');
+            field.classList.remove('border-gray-300');
+          } else {
+            field.classList.remove('border-red-500');
+            field.classList.add('border-gray-300');
+          }
+        });
+      });
+
+      // Email validation
+      const emailInput = document.querySelector('[data-id="email-input"]');
+      emailInput.addEventListener('blur', () => {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(emailInput.value) && emailInput.value.trim() !== '') {
+          emailInput.classList.add('border-red-500');
+          emailInput.classList.remove('border-gray-300');
+        } else {
+          emailInput.classList.remove('border-red-500');
+          emailInput.classList.add('border-gray-300');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

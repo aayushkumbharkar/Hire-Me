@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post a Job - Hire Me!</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://use.typekit.net/yjp3aho.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body { font-family: "sofia-pro", sans-serif; }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <!-- Navigation -->
+  <div id="navbar-container" data-source="components/navbar.html"></div>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-blue-600 to-blue-800 text-white py-16" data-id="post-job-hero">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6" data-id="hero-title">Post Your Job</h1>
+      <p class="text-xl text-blue-100 max-w-2xl mx-auto" data-id="hero-subtitle">
+        Reach thousands of qualified candidates with our powerful job posting platform
+      </p>
+    </div>
+  </section>
+
+  <!-- Job Posting Form -->
+  <section class="py-16" data-id="job-form-section">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-white rounded-lg shadow-lg p-8" data-id="job-form-container">
+        <form id="job-posting-form" data-id="job-posting-form">
+          
+          <!-- Basic Information -->
+          <div class="mb-8" data-id="basic-info-section">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6" data-id="basic-info-title">Basic Information</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6" data-id="basic-info-grid">
+              <div data-id="job-title-field">
+                <label for="job-title" class="block text-sm font-medium text-gray-700 mb-2" data-id="job-title-label">Job Title *</label>
+                <input type="text" 
+                       id="job-title" 
+                       name="jobTitle"
+                       placeholder="e.g. Senior Software Engineer"
+                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                       required 
+                       data-id="job-title-input">
+              </div>
+              
+              <div data-id="company-name-field">
+                <label for="company-name" class="block text-sm font-medium text-gray-700 mb-2" data-id="company-name-label">Company Name *</label>
+                <input type="text" 
+                       id="company-name" 
+                       name="companyName"
+                       placeholder="Your company name"
+                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                       required 
+                       data-id="company-name-input">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6" data-id="job-details-grid">
+              <div data-id="job-type-field">
+                <label for="job-type" class="block text-sm font-medium text-gray-700 mb-2" data-id="job-type-label">Job Type *</label>
+                <select id="job-type" 
+                        name="jobType" 
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                        required 
+                        data-id="job-type-select">
+                  <option value="">Select job type</option>
+                  <option value="full-time">Full-time</option>
+                  <option value="part-time">Part-time</option>
+                  <option value="contract">Contract</option>
+                  <option value="internship">Internship</option>
+                  <option value="remote">Remote</option>
+                </select>
+              </div>
+              
+              <div data-id="experience-level-field">
+                <label for="experience-level" class="block text-sm font-medium text-gray-700 mb-2" data-id="experience-level-label">Experience Level *</label>
+                <select id="experience-level" 
+                        name="experienceLevel" 
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                        required 
+                        data-id="experience-level-select">
+                  <option value="">Select level</option>
+                  <option value="entry">Entry Level</option>
+                  <option value="mid">Mid Level</option>
+                  <option value="senior">Senior Level</option>
+                  <option value="executive">Executive</option>
+                </select>
+              </div>
+              
+              <div data-id="category-field">
+                <label for="category" class="block text-sm font-medium text-gray-700 mb-2" data-id="category-label">Category *</label>
+                <select id="category" 
+                        name="category" 
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                        required 
+                        data-id="category-select">
+                  <option value="">Select category</option>
+                  <option value="technology">Technology</option>
+                  <option value="marketing">Marketing</option>
+                  <option value="sales">Sales</option>
+                  <option value="finance">Finance</option>
+                  <option value="healthcare">Healthcare</option>
+                  <option value="education">Education</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6" data-id="location-salary-grid">
+              <div data-id="location-field">
+                <label for="location" class="block text-sm font-medium text-gray-700 mb-2" data-id="location-label">Location *</label>
+                <input type="text" 
+                       id="location" 
+                       name="location"
+                       placeholder="e.g. New York, NY or Remote"
+                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                       required 
+                       data-id="location-input">
+              </div>
+              
+              <div data-id="salary-range-field">
+                <label for="salary-range" class="block text-sm font-medium text-gray-700 mb-2" data-id="salary-range-label">Salary Range</label>
+                <input type="text" 
+                       id="salary-range" 
+                       name="salaryRange"
+                       placeholder="e.g. $80,000 - $120,000"
+                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                       data-id="salary-range-input">
+              </div>
+            </div>
+          </div>
+
+          <!-- Job Description -->
+          <div class="mb-8" data-id="description-section">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6" data-id="description-title">Job Description</h2>
+            
+            <div class="mb-6" data-id="job-summary-field">
+              <label for="job-summary" class="block text-sm font-medium text-gray-700 mb-2" data-id="job-summary-label">Job Summary *</label>
+              <textarea id="job-summary" 
+                        name="jobSummary"
+                        rows="4"
+                        placeholder="Brief overview of the role and your company..."
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                        required 
+                        data-id="job-summary-textarea"></textarea>
+            </div>
+
+            <div class="mb-6" data-id="responsibilities-field">
+              <label for="responsibilities" class="block text-sm font-medium text-gray-700 mb-2" data-id="responsibilities-label">Key Responsibilities *</label>
+              <textarea id="responsibilities" 
+                        name="responsibilities"
+                        rows="6"
+                        placeholder="• List key responsibilities
+• Use bullet points
+• Be specific about daily tasks..."
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                        required 
+                        data-id="responsibilities-textarea"></textarea>
+            </div>
+
+            <div class="mb-6" data-id="requirements-field">
+              <label for="requirements" class="block text-sm font-medium text-gray-700 mb-2" data-id="requirements-label">Requirements *</label>
+              <textarea id="requirements" 
+                        name="requirements"
+                        rows="6"
+                        placeholder="• Required qualifications
+• Skills and experience
+• Education requirements..."
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                        required 
+                        data-id="requirements-textarea"></textarea>
+            </div>
+
+            <div data-id="benefits-field">
+              <label for="benefits" class="block text-sm font-medium text-gray-700 mb-2" data-id="benefits-label">Benefits & Perks</label>
+              <textarea id="benefits" 
+                        name="benefits"
+                        rows="4"
+                        placeholder="• Health insurance
+• Remote work options
+• Professional development..."
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                        data-id="benefits-textarea"></textarea>
+            </div>
+          </div>
+
+          <!-- Company Information -->
+          <div class="mb-8" data-id="company-info-section">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6" data-id="company-info-title">Company Information</h2>
+            
+            <div class="mb-6" data-id="company-description-field">
+              <label for="company-description" class="block text-sm font-medium text-gray-700 mb-2" data-id="company-description-label">Company Description</label>
+              <textarea id="company-description" 
+                        name="companyDescription"
+                        rows="4"
+                        placeholder="Tell candidates about your company, culture, and mission..."
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                        data-id="company-description-textarea"></textarea>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6" data-id="company-details-grid">
+              <div data-id="company-website-field">
+                <label for="company-website" class="block text-sm font-medium text-gray-700 mb-2" data-id="company-website-label">Company Website</label>
+                <input type="url" 
+                       id="company-website" 
+                       name="companyWebsite"
+                       placeholder="https://yourcompany.com"
+                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                       data-id="company-website-input">
+              </div>
+              
+              <div data-id="company-size-field">
+                <label for="company-size" class="block text-sm font-medium text-gray-700 mb-2" data-id="company-size-label">Company Size</label>
+                <select id="company-size" 
+                        name="companySize" 
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                        data-id="company-size-select">
+                  <option value="">Select size</option>
+                  <option value="1-10">1-10 employees</option>
+                  <option value="11-50">11-50 employees</option>
+                  <option value="51-200">51-200 employees</option>
+                  <option value="201-1000">201-1000 employees</option>
+                  <option value="1000+">1000+ employees</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Information -->
+          <div class="mb-8" data-id="contact-info-section">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6" data-id="contact-info-title">Contact Information</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6" data-id="contact-grid">
+              <div data-id="contact-email-field">
+                <label for="contact-email" class="block text-sm font-medium text-gray-700 mb-2" data-id="contact-email-label">Contact Email *</label>
+                <input type="email" 
+                       id="contact-email" 
+                       name="contactEmail"
+                       placeholder="hiring@yourcompany.com"
+                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                       required 
+                       data-id="contact-email-input">
+              </div>
+              
+              <div data-id="contact-phone-field">
+                <label for="contact-phone" class="block text-sm font-medium text-gray-700 mb-2" data-id="contact-phone-label">Contact Phone</label>
+                <input type="tel" 
+                       id="contact-phone" 
+                       name="contactPhone"
+                       placeholder="+1 (555) 123-4567"
+                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                       data-id="contact-phone-input">
+              </div>
+            </div>
+          </div>
+
+          <!-- Posting Options -->
+          <div class="mb-8" data-id="posting-options-section">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6" data-id="posting-options-title">Posting Options</h2>
+            
+            <div class="space-y-4" data-id="options-list">
+              <div class="flex items-center" data-id="urgent-option">
+                <input type="checkbox" 
+                       id="urgent-posting" 
+                       name="urgentPosting"
+                       class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500" 
+                       data-id="urgent-posting-checkbox">
+                <label for="urgent-posting" class="ml-3 text-sm text-gray-700" data-id="urgent-posting-label">
+                  Mark as urgent (+$50)
+                </label>
+              </div>
+              
+              <div class="flex items-center" data-id="featured-option">
+                <input type="checkbox" 
+                       id="featured-posting" 
+                       name="featuredPosting"
+                       class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500" 
+                       data-id="featured-posting-checkbox">
+                <label for="featured-posting" class="ml-3 text-sm text-gray-700" data-id="featured-posting-label">
+                  Feature this job (+$100)
+                </label>
+              </div>
+              
+              <div class="flex items-center" data-id="premium-option">
+                <input type="checkbox" 
+                       id="premium-posting" 
+                       name="premiumPosting"
+                       class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500" 
+                       data-id="premium-posting-checkbox">
+                <label for="premium-posting" class="ml-3 text-sm text-gray-700" data-id="premium-posting-label">
+                  Premium posting with social media promotion (+$200)
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="text-center" data-id="submit-section">
+            <button type="submit" 
+                    class="bg-blue-600 text-white px-12 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2" 
+                    data-id="submit-button">
+              <i data-lucide="briefcase" class="w-5 h-5 inline mr-2"></i>
+              Post Job - $199
+            </button>
+            <p class="text-sm text-gray-600 mt-4" data-id="submit-note">
+              Your job will be reviewed and published within 24 hours
+            </p>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer-container" data-source="components/footer.html"></div>
+
+  <script type="module">
+    import { loadComponent } from './scripts/components/loader.js';
+    
+    // Load components
+    loadComponent('#navbar-container');
+    loadComponent('#footer-container');
+    
+    // Initialize icons
+    lucide.createIcons();
+
+    // Form handling
+    document.getElementById('job-posting-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Get form data
+      const formData = new FormData(this);
+      const jobData = Object.fromEntries(formData.entries());
+      
+      // Calculate total price
+      let totalPrice = 199;
+      if (jobData.urgentPosting) totalPrice += 50;
+      if (jobData.featuredPosting) totalPrice += 100;
+      if (jobData.premiumPosting) totalPrice += 200;
+      
+      // Show success message
+      alert(`Job posting submitted successfully! Total cost: $${totalPrice}\nYour job will be reviewed and published within 24 hours.`);
+      
+      // Store job data in localStorage (mock functionality)
+      const jobs = JSON.parse(localStorage.getItem('postedJobs') || '[]');
+      jobs.push({
+        ...jobData,
+        id: Date.now(),
+        datePosted: new Date().toISOString(),
+        status: 'pending',
+        totalPrice: totalPrice
+      });
+      localStorage.setItem('postedJobs', JSON.stringify(jobs));
+      
+      // Redirect to dashboard or confirmation page
+      window.location.href = 'dashboard.html';
+    });
+
+    // Dynamic pricing update
+    const pricingCheckboxes = document.querySelectorAll('input[type="checkbox"]');
+    const submitButton = document.getElementById('submit-button');
+    
+    pricingCheckboxes.forEach(checkbox => {
+      checkbox.addEventListener('change', function() {
+        let totalPrice = 199;
+        
+        if (document.getElementById('urgent-posting').checked) totalPrice += 50;
+        if (document.getElementById('featured-posting').checked) totalPrice += 100;
+        if (document.getElementById('premium-posting').checked) totalPrice += 200;
+        
+        submitButton.innerHTML = `<i data-lucide="briefcase" class="w-5 h-5 inline mr-2"></i>Post Job - $${totalPrice}`;
+        lucide.createIcons();
+      });
+    });
+  </script>
+</body>
+</html>

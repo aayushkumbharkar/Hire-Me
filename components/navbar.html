@@ -1,0 +1,138 @@
+<nav class="bg-white shadow-md sticky top-0 z-50" data-id="main-navbar">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <!-- Logo -->
+      <div class="flex items-center" data-id="navbar-logo">
+        <a href="index.html" class="flex items-center space-x-2" data-id="logo-link">
+          <div class="bg-blue-600 text-white px-3 py-2 rounded-lg font-bold text-lg" data-id="logo-icon">
+            HM!
+          </div>
+          <span class="text-xl font-bold text-gray-900" data-id="logo-text">Hire Me!</span>
+        </a>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden lg:flex items-center space-x-8" data-id="desktop-nav">
+        <!-- Job Seekers Dropdown -->
+        <div class="relative group" data-id="jobseekers-dropdown">
+          <button class="flex items-center space-x-1 text-gray-700 hover:text-blue-600 transition-colors" data-id="jobseekers-trigger">
+            <span>Job Seekers</span>
+            <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <div class="absolute top-full left-0 mt-1 w-48 bg-white shadow-lg rounded-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200" data-id="jobseekers-menu">
+            <a href="jobs.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600" data-id="find-jobs-link">Find Jobs</a>
+            <a href="companies.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600" data-id="companies-link">Companies</a>
+            <a href="salary-guide.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600" data-id="salary-guide-link">Salary Guide</a>
+            <a href="career-advice.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600" data-id="career-advice-link">Career Advice</a>
+            <a href="resume-builder.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600" data-id="resume-builder-link">Resume Builder</a>
+          </div>
+        </div>
+
+        <!-- Employers Dropdown -->
+        <div class="relative group" data-id="employers-dropdown">
+          <button class="flex items-center space-x-1 text-gray-700 hover:text-blue-600 transition-colors" data-id="employers-trigger">
+            <span>Employers</span>
+            <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <div class="absolute top-full left-0 mt-1 w-48 bg-white shadow-lg rounded-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200" data-id="employers-menu">
+            <a href="post-job.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600" data-id="post-job-link">Post a Job</a>
+            <a href="pricing.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600" data-id="pricing-link">Pricing</a>
+            <a href="search-talent.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600" data-id="search-talent-link">Search Talent</a>
+            <a href="hiring-solutions.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600" data-id="hiring-solutions-link">Hiring Solutions</a>
+            <a href="resources.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600" data-id="resources-link">Resources</a>
+          </div>
+        </div>
+
+        <!-- About -->
+        <a href="about.html" class="text-gray-700 hover:text-blue-600 transition-colors" data-id="about-link">About</a>
+      </div>
+
+      <!-- Auth Buttons -->
+      <div class="hidden lg:flex items-center space-x-4" data-id="auth-buttons">
+        <a href="login.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors" data-id="login-button">Sign In</a>
+        <a href="signup.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors font-medium" data-id="signup-button">Post Your Job</a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button class="lg:hidden flex items-center justify-center w-10 h-10 rounded-lg hover:bg-gray-100 transition-colors" data-id="mobile-menu-toggle">
+        <i data-lucide="menu" class="w-6 h-6 text-gray-700"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="lg:hidden hidden bg-white border-t" data-id="mobile-menu">
+    <div class="px-4 py-4 space-y-4">
+      <!-- Job Seekers Mobile -->
+      <div data-id="mobile-jobseekers">
+        <button class="w-full flex items-center justify-between py-2 text-gray-700 font-medium" data-id="mobile-jobseekers-toggle">
+          <span>Job Seekers</span>
+          <i data-lucide="chevron-down" class="w-4 h-4"></i>
+        </button>
+        <div class="hidden pl-4 mt-2 space-y-2" data-id="mobile-jobseekers-menu">
+          <a href="jobs.html" class="block py-2 text-gray-600 hover:text-blue-600" data-id="mobile-find-jobs">Find Jobs</a>
+          <a href="companies.html" class="block py-2 text-gray-600 hover:text-blue-600" data-id="mobile-companies">Companies</a>
+          <a href="salary-guide.html" class="block py-2 text-gray-600 hover:text-blue-600" data-id="mobile-salary-guide">Salary Guide</a>
+          <a href="career-advice.html" class="block py-2 text-gray-600 hover:text-blue-600" data-id="mobile-career-advice">Career Advice</a>
+          <a href="resume-builder.html" class="block py-2 text-gray-600 hover:text-blue-600" data-id="mobile-resume-builder">Resume Builder</a>
+        </div>
+      </div>
+
+      <!-- Employers Mobile -->
+      <div data-id="mobile-employers">
+        <button class="w-full flex items-center justify-between py-2 text-gray-700 font-medium" data-id="mobile-employers-toggle">
+          <span>Employers</span>
+          <i data-lucide="chevron-down" class="w-4 h-4"></i>
+        </button>
+        <div class="hidden pl-4 mt-2 space-y-2" data-id="mobile-employers-menu">
+          <a href="post-job.html" class="block py-2 text-gray-600 hover:text-blue-600" data-id="mobile-post-job">Post a Job</a>
+          <a href="pricing.html" class="block py-2 text-gray-600 hover:text-blue-600" data-id="mobile-pricing">Pricing</a>
+          <a href="search-talent.html" class="block py-2 text-gray-600 hover:text-blue-600" data-id="mobile-search-talent">Search Talent</a>
+          <a href="hiring-solutions.html" class="block py-2 text-gray-600 hover:text-blue-600" data-id="mobile-hiring-solutions">Hiring Solutions</a>
+          <a href="resources.html" class="block py-2 text-gray-600 hover:text-blue-600" data-id="mobile-resources">Resources</a>
+        </div>
+      </div>
+
+      <a href="about.html" class="block py-2 text-gray-700 hover:text-blue-600" data-id="mobile-about">About</a>
+      
+      <div class="pt-4 border-t space-y-2" data-id="mobile-auth">
+        <a href="login.html" class="block py-2 text-gray-700 hover:text-blue-600 font-medium" data-id="mobile-login">Sign In</a>
+        <a href="signup.html" class="block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors font-medium text-center" data-id="mobile-signup">Post Your Job</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Mobile menu toggle
+  const mobileToggle = document.querySelector('[data-id="mobile-menu-toggle"]');
+  const mobileMenu = document.querySelector('[data-id="mobile-menu"]');
+  
+  if (mobileToggle && mobileMenu) {
+    mobileToggle.addEventListener('click', function() {
+      mobileMenu.classList.toggle('hidden');
+    });
+  }
+
+  // Mobile dropdown toggles
+  const dropdownToggles = document.querySelectorAll('[data-id$="-toggle"]');
+  
+  dropdownToggles.forEach(toggle => {
+    if (toggle.dataset.id.includes('mobile-')) {
+      toggle.addEventListener('click', function() {
+        const menuId = toggle.dataset.id.replace('-toggle', '-menu');
+        const menu = document.querySelector(`[data-id="${menuId}"]`);
+        const icon = toggle.querySelector('[data-lucide="chevron-down"]');
+        
+        if (menu) {
+          menu.classList.toggle('hidden');
+          if (icon) {
+            icon.style.transform = menu.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(180deg)';
+          }
+        }
+      });
+    }
+  });
+});
+</script>

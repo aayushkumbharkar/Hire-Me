@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Builder - Hire Me!</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://use.typekit.net/yjp3aho.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body { font-family: "sofia-pro", sans-serif; }
+    @media print {
+      .no-print { display: none; }
+      .print-only { display: block; }
+      body { background: white; }
+      .resume-preview { box-shadow: none; border: none; margin: 0; }
+    }
+    .print-only { display: none; }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <!-- Navigation -->
+  <div id="navbar-container" data-source="components/navbar.html" class="no-print"></div>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-indigo-600 to-purple-700 text-white py-16 no-print" data-id="resume-builder-hero">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6" data-id="hero-title">Professional Resume Builder</h1>
+        <p class="text-xl text-indigo-100 max-w-3xl mx-auto" data-id="hero-subtitle">
+          Create a stunning resume in minutes with our easy-to-use builder and ATS-friendly templates.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Builder Interface -->
+  <section class="py-16 no-print" data-id="builder-interface">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <!-- Form Section -->
+        <div class="bg-white rounded-lg shadow-lg p-6" data-id="resume-form">
+          <div class="mb-8" data-id="form-tabs">
+            <div class="flex space-x-1 bg-gray-100 rounded-lg p-1" data-id="tab-buttons">
+              <button class="tab-btn active flex-1 py-2 px-4 rounded-md text-sm font-medium transition-colors" data-tab="personal" data-id="personal-tab">
+                Personal Info
+              </button>
+              <button class="tab-btn flex-1 py-2 px-4 rounded-md text-sm font-medium transition-colors" data-tab="experience" data-id="experience-tab">
+                Experience
+              </button>
+              <button class="tab-btn flex-1 py-2 px-4 rounded-md text-sm font-medium transition-colors" data-tab="education" data-id="education-tab">
+                Education
+              </button>
+              <button class="tab-btn flex-1 py-2 px-4 rounded-md text-sm font-medium transition-colors" data-tab="skills" data-id="skills-tab">
+                Skills
+              </button>
+            </div>
+          </div>
+
+          <!-- Personal Information Tab -->
+          <div class="tab-content active" data-tab="personal" data-id="personal-content">
+            <h3 class="text-xl font-bold text-gray-900 mb-6" data-id="personal-title">Personal Information</h3>
+            <div class="space-y-6" data-id="personal-form">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4" data-id="name-fields">
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-2" data-id="first-name-label">First Name</label>
+                  <input type="text" 
+                         class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                         data-id="first-name-input"
+                         placeholder="John">
+                </div>
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-2" data-id="last-name-label">Last Name</label>
+                  <input type="text" 
+                         class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                         data-id="last-name-input"
+                         placeholder="Doe">
+                </div>
+              </div>
+              
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2" data-id="email-label">Email</label>
+                <input type="email" 
+                       class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                       data-id="email-input"
+                       placeholder="john.doe@example.com">
+              </div>
+              
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4" data-id="contact-fields">
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-2" data-id="phone-label">Phone</label>
+                  <input type="tel" 
+                         class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                         data-id="phone-input"
+                         placeholder="(555) 123-4567">
+                </div>
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-2" data-id="location-label">Location</label>
+                  <input type="text" 
+                         class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                         data-id="location-input"
+                         placeholder="New York, NY">
+                </div>
+              </div>
+              
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2" data-id="linkedin-label">LinkedIn Profile</label>
+                <input type="url" 
+                       class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                       data-id="linkedin-input"
+                       placeholder="linkedin.com/in/johndoe">
+              </div>
+              
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2" data-id="summary-label">Professional Summary</label>
+                <textarea rows="4" 
+                          class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                          data-id="summary-input"
+                          placeholder="Write a brief summary of your professional background and career objectives..."></textarea>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience Tab -->
+          <div class="tab-content" data-tab="experience" data-id="experience-content">
+            <div class="flex items-center justify-between mb-6" data-id="experience-header">
+              <h3 class="text-xl font-bold text-gray-900" data-id="experience-title">Work Experience</h3>
+              <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors" data-id="add-experience-btn">
+                <i data-lucide="plus" class="w-4 h-4 inline mr-2"></i>
+                Add Experience
+              </button>
+            </div>
+            <div class="space-y-6" data-id="experience-list">
+              <!-- Experience entries will be added dynamically -->
+            </div>
+          </div>
+
+          <!-- Education Tab -->
+          <div class="tab-content" data-tab="education" data-id="education-content">
+            <div class="flex items-center justify-between mb-6" data-id="education-header">
+              <h3 class="text-xl font-bold text-gray-900" data-id="education-title">Education</h3>
+              <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors" data-id="add-education-btn">
+                <i data-lucide="plus" class="w-4 h-4 inline mr-2"></i>
+                Add Education
+              </button>
+            </div>
+            <div class="space-y-6" data-id="education-list">
+              <!-- Education entries will be added dynamically -->
+            </div>
+          </div>
+
+          <!-- Skills Tab -->
+          <div class="tab-content" data-tab="skills" data-id="skills-content">
+            <h3 class="text-xl font-bold text-gray-900 mb-6" data-id="skills-title">Skills</h3>
+            <div class="space-y-6" data-id="skills-form">
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2" data-id="skills-input-label">Add Skills (press Enter after each skill)</label>
+                <input type="text" 
+                       class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                       data-id="skills-input"
+                       placeholder="e.g., JavaScript, Project Management, Communication">
+                <p class="text-sm text-gray-500 mt-1" data-id="skills-help">Type a skill and press Enter to add it</p>
+              </div>
+              <div class="flex flex-wrap gap-2" data-id="skills-tags">
+                <!-- Skill tags will be added dynamically -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="flex gap-4 mt-8 pt-8 border-t border-gray-200" data-id="form-actions">
+            <button class="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors font-medium" data-id="download-pdf-btn">
+              <i data-lucide="download" class="w-5 h-5 inline mr-2"></i>
+              Download PDF
+            </button>
+            <button class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-medium" data-id="print-resume-btn">
+              <i data-lucide="printer" class="w-5 h-5 inline mr-2"></i>
+              Print Resume
+            </button>
+            <button class="border-2 border-gray-300 text-gray-700 px-6 py-3 rounded-lg hover:border-gray-400 transition-colors font-medium" data-id="save-draft-btn">
+              <i data-lucide="save" class="w-5 h-5 inline mr-2"></i>
+              Save Draft
+            </button>
+          </div>
+        </div>
+
+        <!-- Preview Section -->
+        <div class="bg-white rounded-lg shadow-lg p-6 sticky top-4" data-id="preview-section">
+          <h3 class="text-xl font-bold text-gray-900 mb-6 no-print" data-id="preview-title">Resume Preview</h3>
+          
+          <!-- Resume Preview -->
+          <div class="bg-white border border-gray-200 rounded-lg p-8 resume-preview" data-id="resume-preview">
+            <!-- Header -->
+            <div class="mb-6 pb-6 border-b border-gray-300" data-id="resume-header">
+              <h1 class="text-3xl font-bold text-gray-900 mb-2" data-id="preview-name">Your Name</h1>
+              <div class="text-gray-600 space-y-1" data-id="preview-contact">
+                <div data-id="preview-email">your.email@example.com</div>
+                <div data-id="preview-phone">(555) 123-4567</div>
+                <div data-id="preview-location">Your City, State</div>
+                <div data-id="preview-linkedin">linkedin.com/in/yourprofile</div>
+              </div>
+            </div>
+
+            <!-- Professional Summary -->
+            <div class="mb-6" data-id="resume-summary">
+              <h2 class="text-xl font-bold text-gray-900 mb-3" data-id="summary-heading">Professional Summary</h2>
+              <p class="text-gray-700 leading-relaxed" data-id="preview-summary">
+                Your professional summary will appear here. Add a brief overview of your experience and career objectives.
+              </p>
+            </div>
+
+            <!-- Experience Section -->
+            <div class="mb-6" data-id="resume-experience">
+              <h2 class="text-xl font-bold text-gray-900 mb-4" data-id="experience-heading">Experience</h2>
+              <div class="space-y-4" data-id="preview-experience-list">
+                <div class="text-gray-500 italic" data-id="no-experience">No experience added yet</div>
+              </div>
+            </div>
+
+            <!-- Education Section -->
+            <div class="mb-6" data-id="resume-education">
+              <h2 class="text-xl font-bold text-gray-900 mb-4" data-id="education-heading">Education</h2>
+              <div class="space-y-4" data-id="preview-education-list">
+                <div class="text-gray-500 italic" data-id="no-education">No education added yet</div>
+              </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="mb-6" data-id="resume-skills">
+              <h2 class="text-xl font-bold text-gray-900 mb-4" data-id="skills-heading">Skills</h2>
+              <div class="flex flex-wrap gap-2" data-id="preview-skills-list">
+                <div class="text-gray-500 italic" data-id="no-skills">No skills added yet</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer-container" data-source="components/footer.html" class="no-print"></div>
+
+  <script type="module">
+    import { loadComponent } from './scripts/components/loader.js';
+    
+    // Load components
+    loadComponent('#navbar-container');
+    loadComponent('#footer-container');
+    
+    // Initialize icons after components load
+    setTimeout(() => {
+      lucide.createIcons();
+    }, 100);
+
+    // Resume Builder functionality
+    document.addEventListener('DOMContentLoaded', () => {
+      // Tab switching
+      const tabBtns = document.querySelectorAll('.tab-btn');
+      const tabContents = document.querySelectorAll('.tab-content');
+
+      tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const targetTab = btn.getAttribute('data-tab');
+          
+          // Update button states
+          tabBtns.forEach(b => {
+            b.classList.remove('active', 'bg-blue-600', 'text-white');
+            b.classList.add('bg-transparent', 'text-gray-500');
+          });
+          btn.classList.add('active', 'bg-blue-600', 'text-white');
+          btn.classList.remove('bg-transparent', 'text-gray-500');
+
+          // Update content visibility
+          tabContents.forEach(content => {
+            content.classList.remove('active');
+            content.style.display = 'none';
+          });
+          document.querySelector(`[data-tab="${targetTab}"].tab-content`).classList.add('active');
+          document.querySelector(`[data-tab="${targetTab}"].tab-content`).style.display = 'block';
+        });
+      });
+
+      // Initialize first tab as active
+      document.querySelector('[data-tab="personal"].tab-btn').classList.add('active', 'bg-blue-600', 'text-white');
+      document.querySelector('[data-tab="personal"].tab-content').style.display = 'block';
+
+      // Real-time preview updates
+      const personalInputs = document.querySelectorAll('#personal-content input, #personal-content textarea');
+      personalInputs.forEach(input => {
+        input.addEventListener('input', updatePreview);
+      });
+
+      function updatePreview() {
+        // Update name
+        const firstName = document.querySelector('[data-id="first-name-input"]').value;
+        const lastName = document.querySelector('[data-id="last-name-input"]').value;
+        const fullName = `${firstName} ${lastName}`.trim() || 'Your Name';
+        document.querySelector('[data-id="preview-name"]').textContent = fullName;
+
+        // Update contact info
+        const email = document.querySelector('[data-id="email-input"]').value || 'your.email@example.com';
+        const phone = document.querySelector('[data-id="phone-input"]').value || '(555) 123-4567';
+        const location = document.querySelector('[data-id="location-input"]').value || 'Your City, State';
+        const linkedin = document.querySelector('[data-id="linkedin-input"]').value || 'linkedin.com/in/yourprofile';
+
+        document.querySelector('[data-id="preview-email"]').textContent = email;
+        document.querySelector('[data-id="preview-phone"]').textContent = phone;
+        document.querySelector('[data-id="preview-location"]').textContent = location;
+        document.querySelector('[data-id="preview-linkedin"]').textContent = linkedin;
+
+        // Update summary
+        const summary = document.querySelector('[data-id="summary-input"]').value || 'Your professional summary will appear here. Add a brief overview of your experience and career objectives.';
+        document.querySelector('[data-id="preview-summary"]').textContent = summary;
+      }
+
+      // Experience management
+      let experienceCount = 0;
+      document.querySelector('[data-id="add-experience-btn"]').addEventListener('click', () => {
+        experienceCount++;
+        const experienceHTML = `
+          <div class="border border-gray-200 rounded-lg p-4" data-experience="${experienceCount}">
+            <div class="flex justify-between items-center mb-4">
+              <h4 class="font-semibold text-gray-900">Experience #${experienceCount}</h4>
+              <button class="text-red-600 hover:text-red-700" onclick="removeExperience(${experienceCount})">
+                <i data-lucide="trash-2" class="w-4 h-4"></i>
+              </button>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+              <input type="text" placeholder="Job Title" class="px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 job-title">
+              <input type="text" placeholder="Company Name" class="px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 company-name">
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+              <input type="text" placeholder="Start Date" class="px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 start-date">
+              <input type="text" placeholder="End Date" class="px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 end-date">
+              <input type="text" placeholder="Location" class="px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 job-location">
+            </div>
+            <textarea rows="3" placeholder="Job description and achievements..." class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 job-description"></textarea>
+          </div>
+        `;
+        document.querySelector('[data-id="experience-list"]').insertAdjacentHTML('beforeend', experienceHTML);
+        lucide.createIcons();
+        
+        // Add event listeners for real-time preview
+        const newExperience = document.querySelector(`[data-experience="${experienceCount}"]`);
+        const inputs = newExperience.querySelectorAll('input, textarea');
+        inputs.forEach(input => input.addEventListener('input', updateExperiencePreview));
+        
+        updateExperiencePreview();
+      });
+
+      // Education management
+      let educationCount = 0;
+      document.querySelector('[data-id="add-education-btn"]').addEventListener('click', () => {
+        educationCount++;
+        const educationHTML = `
+          <div class="border border-gray-200 rounded-lg p-4" data-education="${educationCount}">
+            <div class="flex justify-between items-center mb-4">
+              <h4 class="font-semibold text-gray-900">Education #${educationCount}</h4>
+              <button class="text-red-600 hover:text-red-700" onclick="removeEducation(${educationCount})">
+                <i data-lucide="trash-2" class="w-4 h-4"></i>
+              </button>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+              <input type="text" placeholder="Degree/Certificate" class="px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 degree">
+              <input type="text" placeholder="School/Institution" class="px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 school">
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <input type="text" placeholder="Graduation Year" class="px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 graduation">
+              <input type="text" placeholder="GPA (optional)" class="px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 gpa">
+              <input type="text" placeholder="Location" class="px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 edu-location">
+            </div>
+          </div>
+        `;
+        document.querySelector('[data-id="education-list"]').insertAdjacentHTML('beforeend', educationHTML);
+        lucide.createIcons();
+        
+        // Add event listeners for real-time preview
+        const newEducation = document.querySelector(`[data-education="${educationCount}"]`);
+        const inputs = newEducation.querySelectorAll('input');
+        inputs.forEach(input => input.addEventListener('input', updateEducationPreview));
+        
+        updateEducationPreview();
+      });
+
+      // Skills management
+      const skillsInput = document.querySelector('[data-id="skills-input"]');
+      const skillsContainer = document.querySelector('[data-id="skills-tags"]');
+      const skills = [];
+
+      skillsInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter' && skillsInput.value.trim()) {
+          e.preventDefault();
+          const skill = skillsInput.value.trim();
+          if (!skills.includes(skill)) {
+            skills.push(skill);
+            addSkillTag(skill);
+            updateSkillsPreview();
+          }
+          skillsInput.value = '';
+        }
+      });
+
+      function addSkillTag(skill) {
+        const skillTag = document.createElement('span');
+        skillTag.className = 'inline-flex items-center px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm';
+        skillTag.innerHTML = `
+          ${skill}
+          <button class="ml-2 text-blue-600 hover:text-blue-800" onclick="removeSkill('${skill}')">
+            <i data-lucide="x" class="w-3 h-3"></i>
+          </button>
+        `;
+        skillsContainer.appendChild(skillTag);
+        lucide.createIcons();
+      }
+
+      // Global functions for removing items
+      window.removeExperience = (id) => {
+        document.querySelector(`[data-experience="${id}"]`).remove();
+        updateExperiencePreview();
+      };
+
+      window.removeEducation = (id) => {
+        document.querySelector(`[data-education="${id}"]`).remove();
+        updateEducationPreview();
+      };
+
+      window.removeSkill = (skill) => {
+        const index = skills.indexOf(skill);
+        if (index > -1) {
+          skills.splice(index, 1);
+          // Remove the tag
+          const tags = skillsContainer.children;
+          for (let tag of tags) {
+            if (tag.textContent.trim().startsWith(skill)) {
+              tag.remove();
+              break;
+            }
+          }
+          updateSkillsPreview();
+        }
+      };
+
+      // Preview update functions
+      function updateExperiencePreview() {
+        const previewContainer = document.querySelector('[data-id="preview-experience-list"]');
+        const experiences = document.querySelectorAll('[data-experience]');
+        
+        if (experiences.length === 0) {
+          previewContainer.innerHTML = '<div class="text-gray-500 italic">No experience added yet</div>';
+          return;
+        }
+
+        let html = '';
+        experiences.forEach(exp => {
+          const jobTitle = exp.querySelector('.job-title').value || 'Job Title';
+          const company = exp.querySelector('.company-name').value || 'Company Name';
+          const startDate = exp.querySelector('.start-date').value || 'Start Date';
+          const endDate = exp.querySelector('.end-date').value || 'End Date';
+          const location = exp.querySelector('.job-location').value || 'Location';
+          const description = exp.querySelector('.job-description').value || 'Job description';
+
+          html += `
+            <div class="mb-4">
+              <div class="flex justify-between items-start mb-1">
+                <h3 class="font-semibold text-gray-900">${jobTitle}</h3>
+                <span class="text-sm text-gray-500">${startDate} - ${endDate}</span>
+              </div>
+              <div class="text-gray-700 mb-2">${company} • ${location}</div>
+              <p class="text-gray-600 text-sm leading-relaxed">${description}</p>
+            </div>
+          `;
+        });
+        
+        previewContainer.innerHTML = html;
+      }
+
+      function updateEducationPreview() {
+        const previewContainer = document.querySelector('[data-id="preview-education-list"]');
+        const educations = document.querySelectorAll('[data-education]');
+        
+        if (educations.length === 0) {
+          previewContainer.innerHTML = '<div class="text-gray-500 italic">No education added yet</div>';
+          return;
+        }
+
+        let html = '';
+        educations.forEach(edu => {
+          const degree = edu.querySelector('.degree').value || 'Degree';
+          const school = edu.querySelector('.school').value || 'School';
+          const graduation = edu.querySelector('.graduation').value || 'Year';
+          const gpa = edu.querySelector('.gpa').value;
+          const location = edu.querySelector('.edu-location').value || 'Location';
+
+          html += `
+            <div class="mb-4">
+              <div class="flex justify-between items-start mb-1">
+                <h3 class="font-semibold text-gray-900">${degree}</h3>
+                <span class="text-sm text-gray-500">${graduation}</span>
+              </div>
+              <div class="text-gray-700">${school} • ${location}</div>
+              ${gpa ? `<div class="text-gray-600 text-sm">GPA: ${gpa}</div>` : ''}
+            </div>
+          `;
+        });
+        
+        previewContainer.innerHTML = html;
+      }
+
+      function updateSkillsPreview() {
+        const previewContainer = document.querySelector('[data-id="preview-skills-list"]');
+        
+        if (skills.length === 0) {
+          previewContainer.innerHTML = '<div class="text-gray-500 italic">No skills added yet</div>';
+          return;
+        }
+
+        let html = '';
+        skills.forEach(skill => {
+          html += `<span class="px-3 py-1 bg-gray-200 text-gray-800 rounded-full text-sm">${skill}</span>`;
+        });
+        
+        previewContainer.innerHTML = html;
+      }
+
+      // Action buttons
+      document.querySelector('[data-id="print-resume-btn"]').addEventListener('click', () => {
+        window.print();
+      });
+
+      document.querySelector('[data-id="download-pdf-btn"]').addEventListener('click', () => {
+        alert('PDF download feature would be implemented with a PDF generation library.');
+      });
+
+      document.querySelector('[data-id="save-draft-btn"]').addEventListener('click', () => {
+        // In a real app, this would save to localStorage or server
+        localStorage.setItem('resumeDraft', JSON.stringify({
+          personal: {
+            firstName: document.querySelector('[data-id="first-name-input"]').value,
+            lastName: document.querySelector('[data-id="last-name-input"]').value,
+            email: document.querySelector('[data-id="email-input"]').value,
+            phone: document.querySelector('[data-id="phone-input"]').value,
+            location: document.querySelector('[data-id="location-input"]').value,
+            linkedin: document.querySelector('[data-id="linkedin-input"]').value,
+            summary: document.querySelector('[data-id="summary-input"]').value
+          },
+          skills: skills
+        }));
+        alert('Resume draft saved successfully!');
+      });
+
+      // Load draft on page load
+      const savedDraft = localStorage.getItem('resumeDraft');
+      if (savedDraft) {
+        const draft = JSON.parse(savedDraft);
+        // Load personal information
+        if (draft.personal) {
+          Object.keys(draft.personal).forEach(key => {
+            const input = document.querySelector(`[data-id="${key.replace(/([A-Z])/g, '-$1').toLowerCase()}-input"]`);
+            if (input) input.value = draft.personal[key];
+          });
+          updatePreview();
+        }
+        // Load skills
+        if (draft.skills) {
+          draft.skills.forEach(skill => {
+            if (!skills.includes(skill)) {
+              skills.push(skill);
+              addSkillTag(skill);
+            }
+          });
+          updateSkillsPreview();
+        }
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Hire Me!</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://use.typekit.net/yjp3aho.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'sofia': ['sofia-pro', 'sans-serif'],
+          },
+          colors: {
+            primary: {
+              50: '#f0f9ff',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sofia bg-gray-50">
+  <div id="navbar-container" data-source="components/navbar.html"></div>
+
+  <!-- Main Content -->
+  <div class="container mx-auto px-6 py-8">
+    <!-- Welcome Header -->
+    <div class="mb-8" data-id="dashboard-header">
+      <h1 class="text-3xl font-bold text-gray-800 mb-2" data-id="welcome-title">Welcome back, <span data-id="user-name-display">John</span>!</h1>
+      <p class="text-gray-600" data-id="welcome-subtitle">Here's what's happening with your job search</p>
+    </div>
+
+    <!-- Stats Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8" data-id="stats-grid">
+      <div class="bg-white rounded-lg shadow-sm p-6 border border-gray-200" data-id="stat-applications">
+        <div class="flex items-center justify-between">
+          <div>
+            <p class="text-sm font-medium text-gray-600">Applications</p>
+            <p class="text-3xl font-bold text-gray-800">12</p>
+            <p class="text-sm text-green-600">+3 this week</p>
+          </div>
+          <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+            <i data-lucide="file-text" class="w-6 h-6 text-blue-600"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-sm p-6 border border-gray-200" data-id="stat-interviews">
+        <div class="flex items-center justify-between">
+          <div>
+            <p class="text-sm font-medium text-gray-600">Interviews</p>
+            <p class="text-3xl font-bold text-gray-800">3</p>
+            <p class="text-sm text-green-600">2 scheduled</p>
+          </div>
+          <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+            <i data-lucide="calendar" class="w-6 h-6 text-green-600"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-sm p-6 border border-gray-200" data-id="stat-saved-jobs">
+        <div class="flex items-center justify-between">
+          <div>
+            <p class="text-sm font-medium text-gray-600">Saved Jobs</p>
+            <p class="text-3xl font-bold text-gray-800">25</p>
+            <p class="text-sm text-blue-600">5 new matches</p>
+          </div>
+          <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
+            <i data-lucide="heart" class="w-6 h-6 text-purple-600"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-sm p-6 border border-gray-200" data-id="stat-profile-views">
+        <div class="flex items-center justify-between">
+          <div>
+            <p class="text-sm font-medium text-gray-600">Profile Views</p>
+            <p class="text-3xl font-bold text-gray-800">47</p>
+            <p class="text-sm text-green-600">+12 this week</p>
+          </div>
+          <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
+            <i data-lucide="eye" class="w-6 h-6 text-orange-600"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <!-- Recent Applications -->
+      <div class="lg:col-span-2">
+        <div class="bg-white rounded-lg shadow-sm border border-gray-200" data-id="recent-applications">
+          <div class="p-6 border-b border-gray-200">
+            <div class="flex justify-between items-center">
+              <h2 class="text-xl font-semibold text-gray-800">Recent Applications</h2>
+              <a href="applications.html" class="text-primary-500 hover:text-primary-600 text-sm font-medium">View All</a>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="space-y-4">
+              <div class="flex items-center gap-4 p-4 border border-gray-200 rounded-lg" data-id="application-1">
+                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                  <i data-lucide="code" class="w-6 h-6 text-blue-600"></i>
+                </div>
+                <div class="flex-1">
+                  <h3 class="font-semibold text-gray-800">Senior Frontend Developer</h3>
+                  <p class="text-gray-600">TechCorp Inc.</p>
+                  <p class="text-sm text-gray-500">Applied 2 days ago</p>
+                </div>
+                <div class="text-right">
+                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">
+                    Under Review
+                  </span>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-4 p-4 border border-gray-200 rounded-lg" data-id="application-2">
+                <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                  <i data-lucide="megaphone" class="w-6 h-6 text-green-600"></i>
+                </div>
+                <div class="flex-1">
+                  <h3 class="font-semibold text-gray-800">Marketing Manager</h3>
+                  <p class="text-gray-600">StartupXYZ</p>
+                  <p class="text-sm text-gray-500">Applied 1 week ago</p>
+                </div>
+                <div class="text-right">
+                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                    Interview Scheduled
+                  </span>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-4 p-4 border border-gray-200 rounded-lg" data-id="application-3">
+                <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
+                  <i data-lucide="palette" class="w-6 h-6 text-purple-600"></i>
+                </div>
+                <div class="flex-1">
+                  <h3 class="font-semibold text-gray-800">UX Designer</h3>
+                  <p class="text-gray-600">Design Studio Co.</p>
+                  <p class="text-sm text-gray-500">Applied 1 week ago</p>
+                </div>
+                <div class="text-right">
+                  <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-red-100 text-red-800">
+                    Not Selected
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="space-y-6">
+        <!-- Profile Completion -->
+        <div class="bg-white rounded-lg shadow-sm border border-gray-200" data-id="profile-completion">
+          <div class="p-6">
+            <h3 class="text-lg font-semibold text-gray-800 mb-4">Profile Completion</h3>
+            <div class="mb-4">
+              <div class="flex justify-between text-sm text-gray-600 mb-2">
+                <span>Complete your profile</span>
+                <span>75%</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-2">
+                <div class="bg-primary-500 h-2 rounded-full" style="width: 75%"></div>
+              </div>
+            </div>
+            <div class="space-y-2 text-sm">
+              <div class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-green-500"></i>
+                <span class="text-gray-600">Basic information</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-green-500"></i>
+                <span class="text-gray-600">Work experience</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="x" class="w-4 h-4 text-gray-400"></i>
+                <span class="text-gray-600">Skills assessment</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="x" class="w-4 h-4 text-gray-400"></i>
+                <span class="text-gray-600">Portfolio/Resume</span>
+              </div>
+            </div>
+            <button class="mt-4 w-full bg-primary-500 hover:bg-primary-600 text-white font-medium py-2 px-4 rounded-lg transition-colors" data-id="complete-profile-btn">
+              Complete Profile
+            </button>
+          </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="bg-white rounded-lg shadow-sm border border-gray-200" data-id="quick-actions">
+          <div class="p-6">
+            <h3 class="text-lg font-semibold text-gray-800 mb-4">Quick Actions</h3>
+            <div class="space-y-3">
+              <button class="w-full text-left flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors" data-id="search-jobs-btn">
+                <i data-lucide="search" class="w-5 h-5 text-primary-500"></i>
+                <span class="font-medium text-gray-700">Search Jobs</span>
+              </button>
+              <button class="w-full text-left flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors" data-id="update-resume-btn">
+                <i data-lucide="file-text" class="w-5 h-5 text-primary-500"></i>
+                <span class="font-medium text-gray-700">Update Resume</span>
+              </button>
+              <button class="w-full text-left flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors" data-id="view-saved-jobs-btn">
+                <i data-lucide="heart" class="w-5 h-5 text-primary-500"></i>
+                <span class="font-medium text-gray-700">Saved Jobs</span>
+              </button>
+              <button class="w-full text-left flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors" data-id="interview-prep-btn">
+                <i data-lucide="video" class="w-5 h-5 text-primary-500"></i>
+                <span class="font-medium text-gray-700">Interview Prep</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recommended Jobs -->
+        <div class="bg-white rounded-lg shadow-sm border border-gray-200" data-id="recommended-jobs">
+          <div class="p-6">
+            <h3 class="text-lg font-semibold text-gray-800 mb-4">Recommended for You</h3>
+            <div class="space-y-4">
+              <div class="p-3 border border-gray-200 rounded-lg cursor-pointer hover:border-primary-500 transition-colors" data-id="recommended-job-1">
+                <h4 class="font-medium text-gray-800 text-sm">Product Manager</h4>
+                <p class="text-gray-600 text-sm">InnovateCorp</p>
+                <p class="text-primary-500 text-sm">$100k - $130k</p>
+              </div>
+              <div class="p-3 border border-gray-200 rounded-lg cursor-pointer hover:border-primary-500 transition-colors" data-id="recommended-job-2">
+                <h4 class="font-medium text-gray-800 text-sm">Data Analyst</h4>
+                <p class="text-gray-600 text-sm">DataFlow Inc.</p>
+                <p class="text-primary-500 text-sm">$80k - $100k</p>
+              </div>
+            </div>
+            <button class="mt-4 w-full text-primary-500 hover:text-primary-600 font-medium text-sm" data-id="view-more-recommendations">
+              View More Recommendations
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer-container" data-source="components/footer.html"></div>
+
+  <script type="module">
+    import { loadComponent } from './scripts/components/loader.js';
+    
+    // Load components
+    loadComponent('#navbar-container');
+    loadComponent('#footer-container');
+    
+    // Check authentication
+    const user = JSON.parse(localStorage.getItem('user') || 'null');
+    if (!user) {
+      window.location.href = 'login.html';
+    }
+    
+    // Update user name display
+    if (user) {
+      const userNameDisplay = document.querySelector('[data-id="user-name-display"]');
+      if (userNameDisplay) {
+        userNameDisplay.textContent = user.name || user.email.split('@')[0];
+      }
+    }
+    
+    // Quick action handlers
+    document.querySelector('[data-id="search-jobs-btn"]').addEventListener('click', () => {
+      window.location.href = 'jobs.html';
+    });
+    
+    document.querySelector('[data-id="update-resume-btn"]').addEventListener('click', () => {
+      window.location.href = 'profile.html#resume';
+    });
+    
+    document.querySelector('[data-id="view-saved-jobs-btn"]').addEventListener('click', () => {
+      window.location.href = 'saved-jobs.html';
+    });
+    
+    document.querySelector('[data-id="complete-profile-btn"]').addEventListener('click', () => {
+      window.location.href = 'profile.html';
+    });
+    
+    // Application status clicks
+    document.querySelectorAll('[data-id^="application-"]').forEach(app => {
+      app.addEventListener('click', () => {
+        window.location.href = 'applications.html';
+      });
+    });
+    
+    // Recommended job clicks
+    document.querySelectorAll('[data-id^="recommended-job-"]').forEach(job => {
+      job.addEventListener('click', () => {
+        window.location.href = 'job-details.html?id=' + job.dataset.id.split('-')[2];
+      });
+    });
+    
+    // Initialize icons
+    setTimeout(() => {
+      lucide.createIcons();
+    }, 100);
+  </script>
+</body>
+</html>

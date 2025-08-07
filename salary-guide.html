@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salary Guide - Hire Me!</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://use.typekit.net/yjp3aho.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body { font-family: "sofia-pro", sans-serif; }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <!-- Navigation -->
+  <div id="navbar-container" data-source="components/navbar.html"></div>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-green-600 to-blue-700 text-white py-16" data-id="salary-guide-hero">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6" data-id="hero-title">2024 Salary Guide</h1>
+        <p class="text-xl text-blue-100 max-w-3xl mx-auto" data-id="hero-subtitle">
+          Discover current salary ranges, market trends, and compensation insights across all industries and roles.
+        </p>
+      </div>
+
+      <!-- Quick Salary Search -->
+      <div class="max-w-2xl mx-auto" data-id="quick-search">
+        <div class="bg-white rounded-lg p-6 shadow-lg">
+          <h3 class="text-lg font-semibold text-gray-900 mb-4" data-id="search-title">Quick Salary Lookup</h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+            <select class="px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" data-id="job-title-select">
+              <option value="">Select Job Title</option>
+              <option>Software Engineer</option>
+              <option>Product Manager</option>
+              <option>Data Scientist</option>
+              <option>UX Designer</option>
+              <option>Marketing Manager</option>
+              <option>Sales Representative</option>
+            </select>
+            <select class="px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" data-id="location-select">
+              <option value="">Select Location</option>
+              <option>New York, NY</option>
+              <option>San Francisco, CA</option>
+              <option>Austin, TX</option>
+              <option>Seattle, WA</option>
+              <option>Remote</option>
+            </select>
+            <select class="px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" data-id="experience-select">
+              <option value="">Experience Level</option>
+              <option>Entry Level (0-2 years)</option>
+              <option>Mid Level (3-5 years)</option>
+              <option>Senior Level (6-10 years)</option>
+              <option>Executive (10+ years)</option>
+            </select>
+          </div>
+          <button class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition-colors font-medium" data-id="search-salary-btn">
+            <i data-lucide="search" class="w-5 h-5 inline mr-2"></i>
+            Get Salary Data
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Salary Results -->
+  <section class="py-16 bg-white" data-id="salary-results">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="hidden" data-id="results-container">
+        <div class="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-8" data-id="salary-display">
+          <h3 class="text-2xl font-bold text-gray-900 mb-4" data-id="selected-role">Software Engineer - San Francisco, CA</h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="text-center" data-id="min-salary">
+              <div class="text-3xl font-bold text-blue-600" data-id="min-amount">$120,000</div>
+              <div class="text-gray-600" data-id="min-label">Minimum</div>
+            </div>
+            <div class="text-center" data-id="avg-salary">
+              <div class="text-4xl font-bold text-green-600" data-id="avg-amount">$160,000</div>
+              <div class="text-gray-600" data-id="avg-label">Average</div>
+            </div>
+            <div class="text-center" data-id="max-salary">
+              <div class="text-3xl font-bold text-purple-600" data-id="max-amount">$220,000</div>
+              <div class="text-gray-600" data-id="max-label">Maximum</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Industry Salary Overview -->
+  <section class="py-16 bg-gray-100" data-id="industry-overview">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center" data-id="industry-title">Salary by Industry</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-id="industry-grid">
+        <!-- Technology -->
+        <div class="bg-white rounded-lg p-6 shadow-lg" data-id="tech-industry">
+          <div class="flex items-center mb-4" data-id="tech-header">
+            <i data-lucide="laptop" class="w-8 h-8 text-blue-600 mr-3"></i>
+            <h3 class="text-xl font-bold text-gray-900" data-id="tech-title">Technology</h3>
+          </div>
+          <div class="space-y-3" data-id="tech-roles">
+            <div class="flex justify-between" data-id="tech-role-1">
+              <span class="text-gray-700" data-id="tech-role-1-title">Software Engineer</span>
+              <span class="font-semibold text-green-600" data-id="tech-role-1-salary">$140K</span>
+            </div>
+            <div class="flex justify-between" data-id="tech-role-2">
+              <span class="text-gray-700" data-id="tech-role-2-title">Product Manager</span>
+              <span class="font-semibold text-green-600" data-id="tech-role-2-salary">$155K</span>
+            </div>
+            <div class="flex justify-between" data-id="tech-role-3">
+              <span class="text-gray-700" data-id="tech-role-3-title">Data Scientist</span>
+              <span class="font-semibold text-green-600" data-id="tech-role-3-salary">$135K</span>
+            </div>
+            <div class="flex justify-between" data-id="tech-role-4">
+              <span class="text-gray-700" data-id="tech-role-4-title">UX Designer</span>
+              <span class="font-semibold text-green-600" data-id="tech-role-4-salary">$110K</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Finance -->
+        <div class="bg-white rounded-lg p-6 shadow-lg" data-id="finance-industry">
+          <div class="flex items-center mb-4" data-id="finance-header">
+            <i data-lucide="dollar-sign" class="w-8 h-8 text-green-600 mr-3"></i>
+            <h3 class="text-xl font-bold text-gray-900" data-id="finance-title">Finance</h3>
+          </div>
+          <div class="space-y-3" data-id="finance-roles">
+            <div class="flex justify-between" data-id="finance-role-1">
+              <span class="text-gray-700" data-id="finance-role-1-title">Financial Analyst</span>
+              <span class="font-semibold text-green-600" data-id="finance-role-1-salary">$85K</span>
+            </div>
+            <div class="flex justify-between" data-id="finance-role-2">
+              <span class="text-gray-700" data-id="finance-role-2-title">Investment Banker</span>
+              <span class="font-semibold text-green-600" data-id="finance-role-2-salary">$145K</span>
+            </div>
+            <div class="flex justify-between" data-id="finance-role-3">
+              <span class="text-gray-700" data-id="finance-role-3-title">Portfolio Manager</span>
+              <span class="font-semibold text-green-600" data-id="finance-role-3-salary">$165K</span>
+            </div>
+            <div class="flex justify-between" data-id="finance-role-4">
+              <span class="text-gray-700" data-id="finance-role-4-title">Risk Analyst</span>
+              <span class="font-semibold text-green-600" data-id="finance-role-4-salary">$95K</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Healthcare -->
+        <div class="bg-white rounded-lg p-6 shadow-lg" data-id="healthcare-industry">
+          <div class="flex items-center mb-4" data-id="healthcare-header">
+            <i data-lucide="heart" class="w-8 h-8 text-red-600 mr-3"></i>
+            <h3 class="text-xl font-bold text-gray-900" data-id="healthcare-title">Healthcare</h3>
+          </div>
+          <div class="space-y-3" data-id="healthcare-roles">
+            <div class="flex justify-between" data-id="healthcare-role-1">
+              <span class="text-gray-700" data-id="healthcare-role-1-title">Registered Nurse</span>
+              <span class="font-semibold text-green-600" data-id="healthcare-role-1-salary">$75K</span>
+            </div>
+            <div class="flex justify-between" data-id="healthcare-role-2">
+              <span class="text-gray-700" data-id="healthcare-role-2-title">Physician</span>
+              <span class="font-semibold text-green-600" data-id="healthcare-role-2-salary">$220K</span>
+            </div>
+            <div class="flex justify-between" data-id="healthcare-role-3">
+              <span class="text-gray-700" data-id="healthcare-role-3-title">Physical Therapist</span>
+              <span class="font-semibold text-green-600" data-id="healthcare-role-3-salary">$85K</span>
+            </div>
+            <div class="flex justify-between" data-id="healthcare-role-4">
+              <span class="text-gray-700" data-id="healthcare-role-4-title">Medical Technician</span>
+              <span class="font-semibold text-green-600" data-id="healthcare-role-4-salary">$55K</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Marketing -->
+        <div class="bg-white rounded-lg p-6 shadow-lg" data-id="marketing-industry">
+          <div class="flex items-center mb-4" data-id="marketing-header">
+            <i data-lucide="megaphone" class="w-8 h-8 text-purple-600 mr-3"></i>
+            <h3 class="text-xl font-bold text-gray-900" data-id="marketing-title">Marketing</h3>
+          </div>
+          <div class="space-y-3" data-id="marketing-roles">
+            <div class="flex justify-between" data-id="marketing-role-1">
+              <span class="text-gray-700" data-id="marketing-role-1-title">Marketing Manager</span>
+              <span class="font-semibold text-green-600" data-id="marketing-role-1-salary">$85K</span>
+            </div>
+            <div class="flex justify-between" data-id="marketing-role-2">
+              <span class="text-gray-700" data-id="marketing-role-2-title">Digital Marketer</span>
+              <span class="font-semibold text-green-600" data-id="marketing-role-2-salary">$65K</span>
+            </div>
+            <div class="flex justify-between" data-id="marketing-role-3">
+              <span class="text-gray-700" data-id="marketing-role-3-title">Content Manager</span>
+              <span class="font-semibold text-green-600" data-id="marketing-role-3-salary">$60K</span>
+            </div>
+            <div class="flex justify-between" data-id="marketing-role-4">
+              <span class="text-gray-700" data-id="marketing-role-4-title">Brand Manager</span>
+              <span class="font-semibold text-green-600" data-id="marketing-role-4-salary">$95K</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sales -->
+        <div class="bg-white rounded-lg p-6 shadow-lg" data-id="sales-industry">
+          <div class="flex items-center mb-4" data-id="sales-header">
+            <i data-lucide="trending-up" class="w-8 h-8 text-orange-600 mr-3"></i>
+            <h3 class="text-xl font-bold text-gray-900" data-id="sales-title">Sales</h3>
+          </div>
+          <div class="space-y-3" data-id="sales-roles">
+            <div class="flex justify-between" data-id="sales-role-1">
+              <span class="text-gray-700" data-id="sales-role-1-title">Sales Representative</span>
+              <span class="font-semibold text-green-600" data-id="sales-role-1-salary">$65K</span>
+            </div>
+            <div class="flex justify-between" data-id="sales-role-2">
+              <span class="text-gray-700" data-id="sales-role-2-title">Sales Manager</span>
+              <span class="font-semibold text-green-600" data-id="sales-role-2-salary">$95K</span>
+            </div>
+            <div class="flex justify-between" data-id="sales-role-3">
+              <span class="text-gray-700" data-id="sales-role-3-title">Account Executive</span>
+              <span class="font-semibold text-green-600" data-id="sales-role-3-salary">$85K</span>
+            </div>
+            <div class="flex justify-between" data-id="sales-role-4">
+              <span class="text-gray-700" data-id="sales-role-4-title">Business Development</span>
+              <span class="font-semibold text-green-600" data-id="sales-role-4-salary">$105K</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="bg-white rounded-lg p-6 shadow-lg" data-id="education-industry">
+          <div class="flex items-center mb-4" data-id="education-header">
+            <i data-lucide="graduation-cap" class="w-8 h-8 text-indigo-600 mr-3"></i>
+            <h3 class="text-xl font-bold text-gray-900" data-id="education-title">Education</h3>
+          </div>
+          <div class="space-y-3" data-id="education-roles">
+            <div class="flex justify-between" data-id="education-role-1">
+              <span class="text-gray-700" data-id="education-role-1-title">Teacher</span>
+              <span class="font-semibold text-green-600" data-id="education-role-1-salary">$50K</span>
+            </div>
+            <div class="flex justify-between" data-id="education-role-2">
+              <span class="text-gray-700" data-id="education-role-2-title">Principal</span>
+              <span class="font-semibold text-green-600" data-id="education-role-2-salary">$95K</span>
+            </div>
+            <div class="flex justify-between" data-id="education-role-3">
+              <span class="text-gray-700" data-id="education-role-3-title">Curriculum Designer</span>
+              <span class="font-semibold text-green-600" data-id="education-role-3-salary">$70K</span>
+            </div>
+            <div class="flex justify-between" data-id="education-role-4">
+              <span class="text-gray-700" data-id="education-role-4-title">Academic Advisor</span>
+              <span class="font-semibold text-green-600" data-id="education-role-4-salary">$55K</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Salary Trends -->
+  <section class="py-16 bg-white" data-id="salary-trends">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center" data-id="trends-title">2024 Salary Trends</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12" data-id="trends-content">
+        <div data-id="trends-list">
+          <h3 class="text-2xl font-bold text-gray-900 mb-6" data-id="key-trends-title">Key Trends</h3>
+          <div class="space-y-6" data-id="trends-items">
+            <div class="flex items-start" data-id="trend-1">
+              <i data-lucide="trending-up" class="w-6 h-6 text-green-600 mr-3 mt-1"></i>
+              <div>
+                <h4 class="font-semibold text-gray-900" data-id="trend-1-title">Remote Work Premium</h4>
+                <p class="text-gray-600" data-id="trend-1-desc">Remote positions offer 10-15% salary premium over on-site roles</p>
+              </div>
+            </div>
+            <div class="flex items-start" data-id="trend-2">
+              <i data-lucide="bar-chart" class="w-6 h-6 text-blue-600 mr-3 mt-1"></i>
+              <div>
+                <h4 class="font-semibold text-gray-900" data-id="trend-2-title">Tech Skills in Demand</h4>
+                <p class="text-gray-600" data-id="trend-2-desc">AI, machine learning, and cloud computing skills command higher salaries</p>
+              </div>
+            </div>
+            <div class="flex items-start" data-id="trend-3">
+              <i data-lucide="users" class="w-6 h-6 text-purple-600 mr-3 mt-1"></i>
+              <div>
+                <h4 class="font-semibold text-gray-900" data-id="trend-3-title">Experience Gap</h4>
+                <p class="text-gray-600" data-id="trend-3-desc">Mid-level professionals see the highest salary growth rates</p>
+              </div>
+            </div>
+            <div class="flex items-start" data-id="trend-4">
+              <i data-lucide="map-pin" class="w-6 h-6 text-red-600 mr-3 mt-1"></i>
+              <div>
+                <h4 class="font-semibold text-gray-900" data-id="trend-4-title">Location Flexibility</h4>
+                <p class="text-gray-600" data-id="trend-4-desc">Geographic arbitrage allows for better work-life balance</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div data-id="factors-affecting">
+          <h3 class="text-2xl font-bold text-gray-900 mb-6" data-id="factors-title">Factors Affecting Salary</h3>
+          <div class="space-y-4" data-id="factors-list">
+            <div class="bg-gray-50 p-4 rounded-lg" data-id="factor-1">
+              <h4 class="font-semibold text-gray-900 mb-2" data-id="factor-1-title">Experience Level</h4>
+              <p class="text-gray-600" data-id="factor-1-desc">Years of relevant experience significantly impact salary ranges</p>
+            </div>
+            <div class="bg-gray-50 p-4 rounded-lg" data-id="factor-2">
+              <h4 class="font-semibold text-gray-900 mb-2" data-id="factor-2-title">Education & Certifications</h4>
+              <p class="text-gray-600" data-id="factor-2-desc">Advanced degrees and industry certifications boost earning potential</p>
+            </div>
+            <div class="bg-gray-50 p-4 rounded-lg" data-id="factor-3">
+              <h4 class="font-semibold text-gray-900 mb-2" data-id="factor-3-title">Company Size</h4>
+              <p class="text-gray-600" data-id="factor-3-desc">Large corporations typically offer higher base salaries and benefits</p>
+            </div>
+            <div class="bg-gray-50 p-4 rounded-lg" data-id="factor-4">
+              <h4 class="font-semibold text-gray-900 mb-2" data-id="factor-4-title">Industry Growth</h4>
+              <p class="text-gray-600" data-id="factor-4-desc">Emerging industries often provide premium compensation packages</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 bg-blue-600" data-id="cta-section">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold text-white mb-4" data-id="cta-title">Ready to Negotiate Your Salary?</h2>
+      <p class="text-xl text-blue-100 mb-8" data-id="cta-subtitle">
+        Use our salary data to make informed decisions about your career and compensation.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="jobs.html" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-blue-50 transition-colors" data-id="cta-browse-jobs">
+          Browse Jobs
+        </a>
+        <a href="career-advice.html" class="border-2 border-white text-white px-8 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition-colors" data-id="cta-get-advice">
+          Get Career Advice
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer-container" data-source="components/footer.html"></div>
+
+  <script type="module">
+    import { loadComponent } from './scripts/components/loader.js';
+    
+    // Load components
+    loadComponent('#navbar-container');
+    loadComponent('#footer-container');
+    
+    // Initialize icons after components load
+    setTimeout(() => {
+      lucide.createIcons();
+    }, 100);
+
+    // Salary search functionality
+    document.addEventListener('DOMContentLoaded', () => {
+      const searchBtn = document.querySelector('[data-id="search-salary-btn"]');
+      const jobTitleSelect = document.querySelector('[data-id="job-title-select"]');
+      const locationSelect = document.querySelector('[data-id="location-select"]');
+      const experienceSelect = document.querySelector('[data-id="experience-select"]');
+      const resultsContainer = document.querySelector('[data-id="results-container"]');
+      const selectedRole = document.querySelector('[data-id="selected-role"]');
+      const minAmount = document.querySelector('[data-id="min-amount"]');
+      const avgAmount = document.querySelector('[data-id="avg-amount"]');
+      const maxAmount = document.querySelector('[data-id="max-amount"]');
+
+      // Mock salary data
+      const salaryData = {
+        'Software Engineer': { min: 90000, avg: 140000, max: 200000 },
+        'Product Manager': { min: 100000, avg: 155000, max: 220000 },
+        'Data Scientist': { min: 95000, avg: 135000, max: 190000 },
+        'UX Designer': { min: 70000, avg: 110000, max: 150000 },
+        'Marketing Manager': { min: 60000, avg: 85000, max: 120000 },
+        'Sales Representative': { min: 45000, avg: 65000, max: 95000 }
+      };
+
+      searchBtn.addEventListener('click', () => {
+        const jobTitle = jobTitleSelect.value;
+        const location = locationSelect.value;
+        const experience = experienceSelect.value;
+
+        if (!jobTitle || !location || !experience) {
+          alert('Please select all fields to get salary data');
+          return;
+        }
+
+        const salary = salaryData[jobTitle];
+        if (salary) {
+          // Apply location and experience multipliers
+          let locationMultiplier = 1;
+          let experienceMultiplier = 1;
+
+          if (location === 'San Francisco, CA') locationMultiplier = 1.3;
+          else if (location === 'New York, NY') locationMultiplier = 1.2;
+          else if (location === 'Seattle, WA') locationMultiplier = 1.1;
+
+          if (experience === 'Entry Level (0-2 years)') experienceMultiplier = 0.7;
+          else if (experience === 'Mid Level (3-5 years)') experienceMultiplier = 1;
+          else if (experience === 'Senior Level (6-10 years)') experienceMultiplier = 1.3;
+          else if (experience === 'Executive (10+ years)') experienceMultiplier = 1.6;
+
+          const adjustedSalary = {
+            min: Math.round(salary.min * locationMultiplier * experienceMultiplier),
+            avg: Math.round(salary.avg * locationMultiplier * experienceMultiplier),
+            max: Math.round(salary.max * locationMultiplier * experienceMultiplier)
+          };
+
+          selectedRole.textContent = `${jobTitle} - ${location}`;
+          minAmount.textContent = `$${adjustedSalary.min.toLocaleString()}`;
+          avgAmount.textContent = `$${adjustedSalary.avg.toLocaleString()}`;
+          maxAmount.textContent = `$${adjustedSalary.max.toLocaleString()}`;
+
+          resultsContainer.classList.remove('hidden');
+          resultsContainer.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

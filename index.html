@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hire Me! - Find Your Dream Job</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://use.typekit.net/yjp3aho.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'sofia': ['sofia-pro', 'sans-serif'],
+          },
+          colors: {
+            primary: {
+              50: '#f0f9ff',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sofia bg-gray-50">
+  <div id="navbar-container" data-source="components/navbar.html"></div>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-primary-500 to-primary-700 text-white py-20" data-id="hero-section">
+    <div class="container mx-auto px-6 text-center">
+      <h1 class="text-4xl md:text-6xl font-bold mb-6" data-id="hero-title">
+        Find Your Dream Job with <span class="text-yellow-300">Hire Me!</span>
+      </h1>
+      <p class="text-xl md:text-2xl mb-10 opacity-90" data-id="hero-subtitle">
+        Connect with top employers and discover opportunities that match your skills
+      </p>
+      
+      <!-- Search Bar -->
+      <div class="bg-white rounded-lg shadow-2xl p-6 max-w-4xl mx-auto" data-id="search-container">
+        <div class="flex flex-col md:flex-row gap-4">
+          <div class="flex-1">
+            <label class="block text-gray-700 text-sm font-medium mb-2" data-id="job-search-label">Job title or keyword</label>
+            <div class="relative">
+              <input 
+                type="text" 
+                placeholder="e.g. Software Developer, Marketing Manager"
+                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-transparent text-gray-800"
+                data-id="job-search-input"
+              >
+              <i data-lucide="search" class="absolute right-3 top-3 text-gray-400 w-5 h-5"></i>
+            </div>
+          </div>
+          <div class="flex-1">
+            <label class="block text-gray-700 text-sm font-medium mb-2" data-id="location-search-label">Location</label>
+            <div class="relative">
+              <input 
+                type="text" 
+                placeholder="e.g. New York, Remote"
+                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-transparent text-gray-800"
+                data-id="location-search-input"
+              >
+              <i data-lucide="map-pin" class="absolute right-3 top-3 text-gray-400 w-5 h-5"></i>
+            </div>
+          </div>
+          <div class="flex items-end">
+            <button class="w-full md:w-auto px-8 py-3 bg-primary-500 hover:bg-primary-600 text-white font-semibold rounded-lg transition-colors flex items-center justify-center gap-2" data-id="search-button">
+              <i data-lucide="search" class="w-5 h-5"></i>
+              Search Jobs
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Categories -->
+  <section class="py-16 bg-white" data-id="categories-section">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4" data-id="categories-title">Popular Categories</h2>
+        <p class="text-gray-600 text-lg" data-id="categories-subtitle">Explore jobs by industry and find your perfect match</p>
+      </div>
+      
+      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6" data-id="categories-grid">
+        <div class="bg-gray-50 hover:bg-primary-50 rounded-lg p-6 text-center transition-colors cursor-pointer group" data-id="category-tech">
+          <i data-lucide="laptop" class="w-12 h-12 mx-auto mb-3 text-primary-500 group-hover:scale-110 transition-transform"></i>
+          <h3 class="font-semibold text-gray-800 mb-1">Technology</h3>
+          <p class="text-sm text-gray-600">1,234 jobs</p>
+        </div>
+        <div class="bg-gray-50 hover:bg-primary-50 rounded-lg p-6 text-center transition-colors cursor-pointer group" data-id="category-marketing">
+          <i data-lucide="megaphone" class="w-12 h-12 mx-auto mb-3 text-primary-500 group-hover:scale-110 transition-transform"></i>
+          <h3 class="font-semibold text-gray-800 mb-1">Marketing</h3>
+          <p class="text-sm text-gray-600">892 jobs</p>
+        </div>
+        <div class="bg-gray-50 hover:bg-primary-50 rounded-lg p-6 text-center transition-colors cursor-pointer group" data-id="category-design">
+          <i data-lucide="palette" class="w-12 h-12 mx-auto mb-3 text-primary-500 group-hover:scale-110 transition-transform"></i>
+          <h3 class="font-semibold text-gray-800 mb-1">Design</h3>
+          <p class="text-sm text-gray-600">567 jobs</p>
+        </div>
+        <div class="bg-gray-50 hover:bg-primary-50 rounded-lg p-6 text-center transition-colors cursor-pointer group" data-id="category-finance">
+          <i data-lucide="dollar-sign" class="w-12 h-12 mx-auto mb-3 text-primary-500 group-hover:scale-110 transition-transform"></i>
+          <h3 class="font-semibold text-gray-800 mb-1">Finance</h3>
+          <p class="text-sm text-gray-600">743 jobs</p>
+        </div>
+        <div class="bg-gray-50 hover:bg-primary-50 rounded-lg p-6 text-center transition-colors cursor-pointer group" data-id="category-sales">
+          <i data-lucide="trending-up" class="w-12 h-12 mx-auto mb-3 text-primary-500 group-hover:scale-110 transition-transform"></i>
+          <h3 class="font-semibold text-gray-800 mb-1">Sales</h3>
+          <p class="text-sm text-gray-600">1,089 jobs</p>
+        </div>
+        <div class="bg-gray-50 hover:bg-primary-50 rounded-lg p-6 text-center transition-colors cursor-pointer group" data-id="category-healthcare">
+          <i data-lucide="heart" class="w-12 h-12 mx-auto mb-3 text-primary-500 group-hover:scale-110 transition-transform"></i>
+          <h3 class="font-semibold text-gray-800 mb-1">Healthcare</h3>
+          <p class="text-sm text-gray-600">623 jobs</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Jobs -->
+  <section class="py-16 bg-gray-50" data-id="featured-jobs-section">
+    <div class="container mx-auto px-6">
+      <div class="flex justify-between items-center mb-12">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4" data-id="featured-jobs-title">Featured Jobs</h2>
+          <p class="text-gray-600 text-lg" data-id="featured-jobs-subtitle">Hand-picked opportunities from top companies</p>
+        </div>
+        <a href="jobs.html" class="hidden md:inline-flex items-center gap-2 text-primary-500 hover:text-primary-600 font-semibold" data-id="view-all-jobs-link">
+          View All Jobs
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" data-id="featured-jobs-grid">
+        <!-- Job Card 1 -->
+        <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow p-6 border border-gray-200" data-id="job-card-1">
+          <div class="flex justify-between items-start mb-4">
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                <i data-lucide="code" class="w-6 h-6 text-blue-600"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-gray-800 text-lg">Senior Frontend Developer</h3>
+                <p class="text-gray-600">TechCorp Inc.</p>
+              </div>
+            </div>
+            <button class="text-gray-400 hover:text-red-500 transition-colors" data-id="bookmark-btn-1">
+              <i data-lucide="heart" class="w-5 h-5"></i>
+            </button>
+          </div>
+          
+          <div class="flex items-center gap-4 text-sm text-gray-600 mb-4">
+            <div class="flex items-center gap-1">
+              <i data-lucide="map-pin" class="w-4 h-4"></i>
+              <span>San Francisco, CA</span>
+            </div>
+            <div class="flex items-center gap-1">
+              <i data-lucide="dollar-sign" class="w-4 h-4"></i>
+              <span>$120k - $150k</span>
+            </div>
+          </div>
+          
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">React</span>
+            <span class="px-3 py-1 bg-green-100 text-green-800 text-xs font-medium rounded-full">Remote</span>
+            <span class="px-3 py-1 bg-purple-100 text-purple-800 text-xs font-medium rounded-full">Full-time</span>
+          </div>
+          
+          <p class="text-gray-600 text-sm mb-4">We're looking for a skilled Frontend Developer to join our innovative team...</p>
+          
+          <button class="w-full bg-primary-500 hover:bg-primary-600 text-white font-semibold py-2 px-4 rounded-lg transition-colors" data-id="apply-btn-1">
+            Apply Now
+          </button>
+        </div>
+
+        <!-- Job Card 2 -->
+        <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow p-6 border border-gray-200" data-id="job-card-2">
+          <div class="flex justify-between items-start mb-4">
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                <i data-lucide="megaphone" class="w-6 h-6 text-green-600"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-gray-800 text-lg">Marketing Manager</h3>
+                <p class="text-gray-600">StartupXYZ</p>
+              </div>
+            </div>
+            <button class="text-gray-400 hover:text-red-500 transition-colors" data-id="bookmark-btn-2">
+              <i data-lucide="heart" class="w-5 h-5"></i>
+            </button>
+          </div>
+          
+          <div class="flex items-center gap-4 text-sm text-gray-600 mb-4">
+            <div class="flex items-center gap-1">
+              <i data-lucide="map-pin" class="w-4 h-4"></i>
+              <span>New York, NY</span>
+            </div>
+            <div class="flex items-center gap-1">
+              <i data-lucide="dollar-sign" class="w-4 h-4"></i>
+              <span>$80k - $100k</span>
+            </div>
+          </div>
+          
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-pink-100 text-pink-800 text-xs font-medium rounded-full">Marketing</span>
+            <span class="px-3 py-1 bg-yellow-100 text-yellow-800 text-xs font-medium rounded-full">Strategy</span>
+            <span class="px-3 py-1 bg-purple-100 text-purple-800 text-xs font-medium rounded-full">Full-time</span>
+          </div>
+          
+          <p class="text-gray-600 text-sm mb-4">Join our dynamic marketing team and help shape our brand strategy...</p>
+          
+          <button class="w-full bg-primary-500 hover:bg-primary-600 text-white font-semibold py-2 px-4 rounded-lg transition-colors" data-id="apply-btn-2">
+            Apply Now
+          </button>
+        </div>
+
+        <!-- Job Card 3 -->
+        <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow p-6 border border-gray-200" data-id="job-card-3">
+          <div class="flex justify-between items-start mb-4">
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
+                <i data-lucide="palette" class="w-6 h-6 text-purple-600"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-gray-800 text-lg">UX Designer</h3>
+                <p class="text-gray-600">Design Studio Co.</p>
+              </div>
+            </div>
+            <button class="text-gray-400 hover:text-red-500 transition-colors" data-id="bookmark-btn-3">
+              <i data-lucide="heart" class="w-5 h-5"></i>
+            </button>
+          </div>
+          
+          <div class="flex items-center gap-4 text-sm text-gray-600 mb-4">
+            <div class="flex items-center gap-1">
+              <i data-lucide="map-pin" class="w-4 h-4"></i>
+              <span>Austin, TX</span>
+            </div>
+            <div class="flex items-center gap-1">
+              <i data-lucide="dollar-sign" class="w-4 h-4"></i>
+              <span>$90k - $120k</span>
+            </div>
+          </div>
+          
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-800 text-xs font-medium rounded-full">Figma</span>
+            <span class="px-3 py-1 bg-orange-100 text-orange-800 text-xs font-medium rounded-full">UX/UI</span>
+            <span class="px-3 py-1 bg-purple-100 text-purple-800 text-xs font-medium rounded-full">Full-time</span>
+          </div>
+          
+          <p class="text-gray-600 text-sm mb-4">Create exceptional user experiences and lead our design initiatives...</p>
+          
+          <button class="w-full bg-primary-500 hover:bg-primary-600 text-white font-semibold py-2 px-4 rounded-lg transition-colors" data-id="apply-btn-3">
+            Apply Now
+          </button>
+        </div>
+      </div>
+
+      <div class="text-center mt-8 md:hidden">
+        <a href="jobs.html" class="inline-flex items-center gap-2 text-primary-500 hover:text-primary-600 font-semibold" data-id="mobile-view-all-jobs-link">
+          View All Jobs
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="py-16 bg-white" data-id="how-it-works-section">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4" data-id="how-it-works-title">How It Works</h2>
+        <p class="text-gray-600 text-lg" data-id="how-it-works-subtitle">Get hired in three simple steps</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8" data-id="steps-grid">
+        <div class="text-center" data-id="step-1">
+          <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-primary-600 font-bold text-xl">1</span>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-3">Create Your Profile</h3>
+          <p class="text-gray-600">Sign up and build a compelling profile that showcases your skills and experience.</p>
+        </div>
+        
+        <div class="text-center" data-id="step-2">
+          <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-primary-600 font-bold text-xl">2</span>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-3">Search & Apply</h3>
+          <p class="text-gray-600">Browse thousands of jobs and apply to positions that match your career goals.</p>
+        </div>
+        
+        <div class="text-center" data-id="step-3">
+          <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-primary-600 font-bold text-xl">3</span>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-3">Get Hired</h3>
+          <p class="text-gray-600">Connect with employers, ace your interviews, and land your dream job.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 bg-primary-500 text-white" data-id="cta-section">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4" data-id="cta-title">Ready to Start Your Career Journey?</h2>
+      <p class="text-xl mb-8 opacity-90" data-id="cta-subtitle">Join thousands of professionals who found their dream jobs with Hire Me!</p>
+      
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a href="signup.html" class="bg-white text-primary-500 hover:bg-gray-100 font-semibold py-3 px-8 rounded-lg transition-colors" data-id="cta-signup-btn">
+          Sign Up as Job Seeker
+        </a>
+        <a href="employer-signup.html" class="bg-primary-700 hover:bg-primary-800 text-white font-semibold py-3 px-8 rounded-lg transition-colors border border-primary-400" data-id="cta-employer-btn">
+          Post a Job
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-container" data-source="components/footer.html"></div>
+
+  <script type="module">
+    import { loadComponent } from './scripts/components/loader.js';
+    
+    // Load all shared components
+    loadComponent('#navbar-container');
+    loadComponent('#footer-container');
+    
+    // Initialize search functionality
+    const searchButton = document.querySelector('[data-id="search-button"]');
+    const jobSearchInput = document.querySelector('[data-id="job-search-input"]');
+    const locationSearchInput = document.querySelector('[data-id="location-search-input"]');
+    
+    searchButton.addEventListener('click', () => {
+      const jobQuery = jobSearchInput.value.trim();
+      const locationQuery = locationSearchInput.value.trim();
+      
+      const params = new URLSearchParams();
+      if (jobQuery) params.append('q', jobQuery);
+      if (locationQuery) params.append('location', locationQuery);
+      
+      window.location.href = `jobs.html${params.toString() ? '?' + params.toString() : ''}`;
+    });
+    
+    // Handle enter key in search inputs
+    [jobSearchInput, locationSearchInput].forEach(input => {
+      input.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+          searchButton.click();
+        }
+      });
+    });
+    
+    // Category navigation
+    document.querySelectorAll('[data-id^="category-"]').forEach(category => {
+      category.addEventListener('click', () => {
+        const categoryName = category.querySelector('h3').textContent;
+        window.location.href = `jobs.html?category=${encodeURIComponent(categoryName)}`;
+      });
+    });
+    
+    // Bookmark functionality (mock for now)
+    document.querySelectorAll('[data-id^="bookmark-btn-"]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const heartIcon = btn.querySelector('i');
+        heartIcon.classList.toggle('fill-current');
+        heartIcon.classList.toggle('text-red-500');
+      });
+    });
+    
+    // Apply button functionality
+    document.querySelectorAll('[data-id^="apply-btn-"]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Check if user is logged in (mock check)
+        const isLoggedIn = localStorage.getItem('user');
+        if (isLoggedIn) {
+          alert('Application submitted successfully!');
+        } else {
+          window.location.href = 'login.html?redirect=apply';
+        }
+      });
+    });
+    
+    // Initialize icons after components are loaded
+    setTimeout(() => {
+      lucide.createIcons();
+    }, 100);
+  </script>
+</body>
+</html>
