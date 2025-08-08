@@ -1,71 +1,37 @@
-# Welcome to your Wowdevai project
+# 💼 Hire Me! – Full Stack Job Portal
 
-## Project info
+**Hire Me!** is a full-stack job portal web application inspired by Indeed, designed to connect job seekers with potential employers in a seamless, user-friendly way.
 
-**URL**: https://wowdev.ai/chat/68950fd6e9f096bd7fdefb1e
+---
 
-## How can I edit this code?
+## ✨ Key Features
 
-There are several ways of editing your application.
+### 👨‍💻 For Job Seekers:
+- **Browse Job Listings**: View all active job opportunities with filters for location, type, and company.
+- **Search Functionality**: Find jobs by keyword or location using a responsive search bar.
+- **Apply to Jobs**: Submit applications directly from the job detail page.
+- **Dashboard**: Track applied jobs and save jobs for later.
 
-**Use Wowdevai**
+### 🏢 For Employers:
+- **Post Jobs**: Create job listings with title, description, location, salary, and more.
+- **Manage Listings**: Edit, update, or delete job postings.
+- **View Applications**: See who has applied to which positions.
 
-Simply visit the [Wowdevai Project](https://wowdev.ai/chat/68950fd6e9f096bd7fdefb1e) and start prompting.
+### 🔐 Authentication:
+- Role-based login system for **Job Seekers** and **Employers**.
+- Email/password registration and login functionality.
 
-Changes made via Wowdevai will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## 🛠 Tech Stack (WowDev-Generated)
+- **Frontend**: React.js
+- **Backend**: Node.js + Express
+- **Database**: MongoDB (or PostgreSQL)
+- **Styling**: TailwindCSS
+- **Routing & State**: React Router, Context API or Redux (based on output)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Wowdevai.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 📂 Project Structure
+> All project files are located in the root of this repository (no separate frontend/backend folders).
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- JavaScript
-- React
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Wowdevai](https://wowdev.ai/chat/68950fd6e9f096bd7fdefb1e) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Wowdevai project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.wowdevai.dev/tips-tricks/custom-domain#step-by-step-guide)
